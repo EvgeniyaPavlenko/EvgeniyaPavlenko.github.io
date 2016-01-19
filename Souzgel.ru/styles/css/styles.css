@@ -524,21 +524,63 @@ header {
 /*/SUNNY*/
 /*SERTIFICATES*/
 .sertificates {
-  width: 100%; }
-  .sertificates .container {
-    height: 300px;
-    background-color: red; }
-    .sertificates .container .sertificates_left {
-      width: 414px;
-      height: 458px;
+  width: 100%;
+  padding-bottom: 98px; }
+  .sertificates .container .sertificates_left {
+    width: 414px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 40px;
+    margin-top: 83px; }
+    .sertificates .container .sertificates_left mark {
+      width: 393px;
+      background-color: #215487;
+      font-size: 32px;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: "RobotoBold";
+      line-height: 41px;
+      padding-right: 16px;
+      padding-left: 13px; }
+    .sertificates .container .sertificates_left p {
+      font-size: 24px;
+      font-family: "RobotoRegular";
+      padding-bottom: 10px;
+      padding-top: 32px;
+      line-height: 30px; }
+      .sertificates .container .sertificates_left p + p {
+        padding-top: 16px;
+        padding-bottom: 21px; }
+    .sertificates .container .sertificates_left span {
+      color: #23598F;
+      font-size: 24px;
+      font-family: "RobotoRegular";
+      display: block; }
+  .sertificates .container .sertificates_right {
+    width: 470px;
+    text-align: right;
+    float: right;
+    margin-top: 85px;
+    position: relative; }
+    .sertificates .container .sertificates_right .mfp-no-margins img.mfp-img {
+      padding: 0; }
+    .sertificates .container .sertificates_right .mfp-no-margins .mfp-figure:after {
+      top: 0;
+      bottom: 0; }
+    .sertificates .container .sertificates_right .mfp-no-margins .mfp-container {
+      padding: 0; }
+    .sertificates .container .sertificates_right img {
+      width: 140px;
       display: inline-block;
       vertical-align: top;
-      background-color: green; }
-    .sertificates .container .sertificates_right {
-      width: 400px;
-      height: 300px;
-      float: right;
-      background-color: pink; }
+      margin-right: 10px;
+      margin-bottom: 21px;
+      cursor: pointer; }
+    .sertificates .container .sertificates_right p {
+      font-size: 16px;
+      font-family: "RobotoRegular";
+      text-align: center;
+      line-height: 20px; }
 
 html {
   font-family: sans-serif;

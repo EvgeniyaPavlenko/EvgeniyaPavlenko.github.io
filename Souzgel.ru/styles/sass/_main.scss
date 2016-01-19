@@ -630,21 +630,73 @@ header{
 /*SERTIFICATES*/
 .sertificates{
   width: 100%;
+  padding-bottom:98px;
   .container{
-    height: 300px;
-    background-color:red;
     .sertificates_left{
       width: 414px;
-      height: 458px;
       display: inline-block;
       vertical-align: top;
-      background-color:green;
+      margin-left: 40px;
+      margin-top: 83px;
+      mark{
+        width: 393px;
+        background-color:#215487;
+        font-size: 32px;
+        color:#fff;
+        text-transform: uppercase;
+        font-family: "RobotoBold";
+        line-height: 41px;
+        padding-right: 16px;
+        padding-left: 13px;
+      }
+      p{
+        font-size: 24px;
+        font-family: "RobotoRegular";
+        padding-bottom:10px;
+        padding-top: 32px;
+        line-height: 30px;
+        &+p{
+          padding-top:16px;
+          padding-bottom:21px;
+        }
+      }
+      span{
+        color:#23598F;
+        font-size: 24px;
+        font-family: "RobotoRegular";
+        display: block;
+      }
     }
     .sertificates_right{
-      width: 400px;
-      height: 300px;
+      width: 470px;
+      text-align: right;
       float: right;
-      background-color:pink;
+      margin-top: 85px;
+      position:relative;
+      .mfp-no-margins img.mfp-img {
+        padding: 0;
+      }
+      .mfp-no-margins .mfp-figure:after {
+        top: 0;
+        bottom: 0;
+      }
+      .mfp-no-margins .mfp-container {
+        padding: 0;
+      }
+      img{
+        width: 140px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 10px;
+        margin-bottom: 21px;
+        cursor: pointer;
+      }
+      p{
+        font-size: 16px;
+        font-family: "RobotoRegular";
+        text-align: center;
+        line-height: 20px;
+      }
     }
   }
 }
