@@ -5,8 +5,14 @@
 	<title>Союз Застройщиков Геленджика</title>
 	<link rel="stylesheet" href="styles/css/styles.css">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="script/script.js"></script>
 </head>
 <body>
+
 	<header>
 		<div class="container">
 			<span class="logo">СОЮЗ ЗАСТРОЙЩИКОВ ГЕЛЕНДЖИКА</span>
@@ -148,15 +154,65 @@
 		</div>
 	</section>
 
-	<!-- <section class="choose_apartaments">
+	<section class="choose_apartaments">
 		<div class="container">
 			<h3>ПОДБЕРИТЕ КВАРТИРУ В ГЕЛЕНДЖИКЕ</h3>
 			<form action="#" method="POST">
-				<label class="checkbox"><input type="checkbox" name="room_1" value="room_1">1 комната</label>
-			    <label class="checkbox"><input type="checkbox" name="room_2" value="room_2">2 комнаты</label>
-			    <label class="checkbox"><input type="checkbox" name="room_3" value="room_3">3 и более</label>
+				<input type="checkbox" name="room_1" value="room_1" id="r1">
+				<label for="r1"><span></span>1 комната</label>
+				<input type="checkbox" name="room_1" value="room_1" id="r2">
+				<label for="r2"><span></span>2 комнаты</label>
+				<input type="checkbox" name="room_1" value="room_1" id="r3">
+				<label for="r3"><span></span>3 и более</label>
+				<div class="price_form">
+					<label for="price_from">Цена от</label><input type="text" id="price_from" placeholder="1900000" class="price_from_i">
+					<label for="price_to">до</label><input type="text" id="price_to" class="price_to_i">рублей
+				</div>
+
+				<div class="to_the_sea">
+					<p>
+					  <label for="amount">Price range:</label>
+					  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+					</p>
+					<div id="slider-range"></div>
+				</div>
+
+				<div class="leave_cont">
+				<div class="arrow_abs"></div>
+					<p>оставьте контакты и получите подборку квартир на почту сейчас</p>
+					<input type="text" placeholder="Ваше имя">
+					<input type="text" placeholder="номер телефона">
+					<input type="text" placeholder="email">
+					<button value="посмотреть планировки">Получить варианты на почту</button>
+				</div>
 			</form>
 		</div>
+	</section>
+
+	<section class="sunny">
+		<div class="container">
+			<div class="right_column">
+				<span>Оставьте контакты</span>
+				<p>Мы отправим планировки и цены квартир участвующих <br>в акции ПРЯМО СЕЙЧАС!</p>
+				<form action="#" method="POST">
+					<input type="text" name="name" placeholder=" Ваше имя">
+					<input type="text" name="contacts" placeholder=" Номер телефона">
+					<input type="submit" value="Получить варианты квартир" class="submit">
+				</form>
+			</div>
+			<div class="sea_view">
+				<p>Квартиры с видом</p> <p>на море от 1 625 000 руб. <span>в ЖК СОЛНЕЧНЫЙ 2</span></p>
+				<div class="sale_abs"><img src="images/sale.png" alt=""></div>
+			</div>
+		</div>
+	</section>
+<!-- 
+	<section class="sertificates">
+		<div class="container">
+			<div class="sertificates_left"></div>
+			<div class="sertificates_right"></div>
+		</div>
 	</section> -->
+
 </body>
 </html>
