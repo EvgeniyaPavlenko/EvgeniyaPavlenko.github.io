@@ -3,11 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Союз Застройщиков Геленджика</title>
-	<link rel="stylesheet" href="styles/css/styles.css">
+	
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/jquery-ui.css">
+	<link rel="stylesheet" href="styles/css/styles.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script src="script/script.js"></script>
 </head>
@@ -170,11 +171,8 @@
 				</div>
 
 				<div class="to_the_sea">
-					<p>
-					  <label for="amount">Price range:</label>
-					  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-					</p>
-					<div id="slider-range"></div>
+						<p>расстояние до моря от <span id="v1"></span> до <span id="v2"></span></p>
+						<div id="slider"></div>
 				</div>
 
 				<div class="leave_cont">
@@ -206,13 +204,13 @@
 			</div>
 		</div>
 	</section>
-<!-- 
+
 	<section class="sertificates">
 		<div class="container">
 			<div class="sertificates_left"></div>
 			<div class="sertificates_right"></div>
 		</div>
-	</section> -->
+	</section>
 
 </body>
 </html>
