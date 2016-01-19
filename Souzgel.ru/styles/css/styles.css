@@ -87,19 +87,18 @@ header {
 .apart_main {
   width: 100%;
   height: 725px;
-  background: url(../../images/1st.jpg) no-repeat 50% 50%; }
+  background: url(../../images/1st.jpg) no-repeat 50% 50%;
+  background-size: cover; }
   .apart_main .container {
-    height: 531px;
     padding-top: 50px; }
     .apart_main .container .left_column {
       max-width: 560px;
-      height: 100%;
-      float: left; }
+      display: inline-block;
+      vertical-align: top; }
       .apart_main .container .left_column .price {
         width: 100%;
-        height: 263px;
-        margin: 0;
-        padding: 0; }
+        padding-bottom: 33px;
+        margin: 0; }
         .apart_main .container .left_column .price h1 {
           font-family: "RobotoBold";
           font-size: 52px;
@@ -111,23 +110,23 @@ header {
         .apart_main .container .left_column .price .normal {
           display: block;
           max-width: 375px;
-          height: 58px;
           background-color: #23598F;
           font-size: 42px;
           font-family: "RobotoRegular";
           color: #fff;
           margin-left: 38px;
           margin-top: -20px;
-          padding-left: 31px; }
+          padding-left: 31px;
+          padding-bottom: 4px; }
           .apart_main .container .left_column .price .normal .bold {
             display: inline;
             margin-left: 2px;
             font-family: "RobotoBold"; }
       .apart_main .container .left_column .q_ty {
         width: 100%;
-        height: 208px;
         background-color: rgba(0, 0, 0, 0.6);
-        margin-top: -3px; }
+        margin-top: -3px;
+        padding-bottom: 53px; }
         .apart_main .container .left_column .q_ty ul {
           padding-top: 47px;
           padding-left: 36px;
@@ -150,11 +149,11 @@ header {
               font-weight: bold; }
     .apart_main .container .right_column {
       max-width: 380px;
-      height: 100%;
       background-color: #4BB5CB;
       float: right;
       text-align: center;
-      position: relative; }
+      position: relative;
+      padding-bottom: 75px; }
       .apart_main .container .right_column .arrow {
         position: absolute;
         width: 50px;
@@ -184,7 +183,6 @@ header {
           font-size: 24px; }
       .apart_main .container .right_column form {
         width: 319px;
-        height: 190px;
         margin: 0 auto;
         margin-top: 35px; }
         .apart_main .container .right_column form input {
@@ -209,7 +207,7 @@ header {
 /*UNION*/
 .union {
   width: 100%;
-  height: 634px; }
+  padding-bottom: 39px; }
   .union .container h3 {
     color: #23598F;
     padding-top: 89px; }
@@ -221,22 +219,24 @@ header {
   .union .container .logos {
     width: 100%;
     margin-top: 46px;
-    padding-left: 11px; }
+    padding-left: 11px;
+    text-align: center; }
     .union .container .logos img {
       max-width: 140px;
-      padding-left: 77px;
-      padding-bottom: 29px; }
+      padding-right: 77px;
+      padding-bottom: 57px;
+      display: inline-block;
+      vertical-align: top; }
       .union .container .logos img:first-child {
         margin-left: none;
-        padding-left: none; }
+        padding-right: none; }
     .union .container .logos .last_row {
-      margin-top: 23px; }
+      margin-top: -20px; }
 
 /*/UNION*/
 /*POPULAR*/
 .popular {
   width: 100%;
-  height: 1505px;
   background-color: #23598F; }
   .popular p {
     color: #99CCFB;
@@ -249,21 +249,22 @@ header {
     color: #fff;
     padding-bottom: 9px; }
   .popular .popular_container {
-    margin-top: 50px; }
+    font-size: 0;
+    padding-top: 49px; }
     .popular .popular_container .popular_item {
       width: 49%;
       margin-right: 2%;
       margin-bottom: 22px;
-      height: 612px;
-      float: left;
+      display: inline-block;
+      vertical-align: top;
       background-color: #fff;
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 42px; }
       .popular .popular_container .popular_item:nth-child(even) {
         margin-right: 0; }
       .popular .popular_container .popular_item .item_img {
         width: 100%;
         height: 257px;
-        background: url(../../images/akvatoria_pre.jpg) no-repeat 50% 50%;
         margin-bottom: 31px; }
       .popular .popular_container .popular_item h3 {
         color: #23598F;
@@ -278,16 +279,18 @@ header {
         display: block;
         margin-top: 21px; }
         .popular .popular_container .popular_item .item_imfo .item {
-          float: left;
+          list-style-type: none;
+          display: inline-block;
+          vertical-align: top;
           width: 140px;
-          height: 65px;
           margin-left: 58px;
           font-size: 16px;
           font-family: "RobotoRegular";
           text-align: left;
           margin-top: -3px;
           line-height: 20px;
-          position: relative; }
+          position: relative;
+          padding-bottom: 28px; }
           .popular .popular_container .popular_item .item_imfo .item span {
             display: block; }
           .popular .popular_container .popular_item .item_imfo .item:nth-child(even) {
@@ -330,14 +333,16 @@ header {
       .popular .popular_container .popular_item button {
         clear: both;
         width: 300px;
-        height: 53px;
         margin: 0 auto;
         background-color: #FFFCCC;
         outline: none;
         border: 2px solid #CBC453;
         font-size: 18px;
         font-family: "RobotoRegular";
-        margin-top: 12px; }
+        margin-top: 6px;
+        padding-top: 24px;
+        line-height: 5px;
+        padding-bottom: 22px; }
 
 /*/POPULAR*/
 /*CHOOSE_APARTAMENTS*/
