@@ -668,7 +668,7 @@ header{
       }
     }
     .sertificates_right{
-      width: 470px;
+      max-width: 470px;
       text-align: right;
       float: right;
       margin-top: 85px;
@@ -698,5 +698,103 @@ header{
         line-height: 20px;
       }
     }
+  }
+}
+
+/*/SERTIFICATES*/
+
+/*MAP*/
+.map{
+  width: 100%;
+  background:url(../../images/map_back.jpg) no-repeat;
+  background-size:cover;
+  padding-top: 71px;
+  padding-bottom: 79px;
+
+  form{
+    max-width:699px;
+    margin:0 auto;
+    background-color:#fff;
+    border-radius:10px;
+    padding-bottom:56px;
+    p{
+      font-size: 24px;
+      font-family: "RobotoRegular";
+      text-align: center;
+      &+p{
+        padding-bottom:41px;
+      }
+    }
+    h3{
+      font-size: 32px;
+      font-family: "RobotoBold";
+      color:#23598F;
+      text-align: center;
+      padding-top:46px;
+      padding-bottom:9px;
+    }
+    input{
+      min-width:438px;
+      height: 53px;
+      border-radius:5px;
+      border:1px solid #CCCCCC;
+      display: block;
+      margin:0 auto;
+      margin-bottom: 15px;
+      height: 49px;
+      outline: none;
+      font-size: 22px;
+      font-family: "RobotoRegular";
+      &::-webkit-input-placeholder{
+        padding-left:20px;
+      }
+    }
+    input[type="submit"]{
+      min-width: 438px;
+      height: 54px;
+      margin: 0 auto;
+      border-radius: 5px;
+      background-color: #FDF693;
+      outline: none;
+      border: 2px solid #CBC453;
+      font-size: 18px;
+      font-family: "RobotoRegular";
+      margin-top: 0px;
+      padding-top: 24px;
+      padding-bottom: 22px;
+      color:#343433;
+      line-height: 0;
+    }
+  }
+}
+/*MAP*/
+
+/*COMMENTS*/
+.comments{
+  width: 100%;
+  background-color:#EEF3F8;
+  padding-bottom:122px;
+  #owl-demo .item iframe{
+    display: block;
+    width: 80%;
+    height: 460px;
+    margin:0 auto;
+  }
+  p{
+    font-size: 24px;
+    font-family: "RobotoRegular";
+    text-align: center;
+    line-height: 30px;
+    &+p{
+      padding-bottom:41px;
+    }
+  }
+  h3{
+    font-size: 32px;
+    font-family: "RobotoBold";
+    color:#23598F;
+    text-align: center;
+    padding-top:68px;
+
   }
 }
