@@ -746,6 +746,150 @@ header {
       padding-top: 31px; }
 
 /*/TEAM*/
+/*CHIEF*/
+.chief {
+  width: 100%;
+  background-color: #F3F3F3;
+  padding-bottom: 77px; }
+  .chief h3 {
+    font-size: 32px;
+    font-family: "RobotoBold";
+    color: #23598F;
+    text-align: center;
+    padding-top: 73px;
+    width: 532px;
+    margin: 0 auto;
+    line-height: 38px;
+    padding-bottom: 17px; }
+  .chief span {
+    display: block; }
+  .chief .name {
+    font-size: 24px;
+    font-family: "RobotoRegular";
+    text-align: center;
+    line-height: 30px; }
+  .chief .position {
+    font-size: 18px;
+    font-family: "RobotoRegular";
+    color: #666;
+    line-height: 20px;
+    text-align: center; }
+  .chief .video {
+    margin-top: 46px; }
+
+/*/CHIEF*/
+/*VISIT*/
+.visit {
+  width: 100%;
+  background-image: url(../../images/visit_back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 76px; }
+  .visit h4 {
+    font-size: 32px;
+    font-family: "RobotoBold";
+    color: #fff;
+    width: 445px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 59px;
+    line-height: 39px; }
+  .visit .visiting {
+    max-width: 620px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 29px;
+    padding-bottom: 45px; }
+    .visit .visiting h4 {
+      display: block;
+      font-size: 28px;
+      font-family: "RobotoBold";
+      color: #fff;
+      width: 100%;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      background-color: #23598F; }
+    .visit .visiting ol {
+      width: 270px;
+      padding-top: 15px;
+      margin-left: 219px; }
+      .visit .visiting ol li {
+        color: #23598F;
+        padding-top: 20px;
+        font-size: 22px;
+        font-family: "RobotoRegular";
+        padding-bottom: 3px;
+        position: relative; }
+        .visit .visiting ol li .arrow_gray {
+          position: absolute; }
+        .visit .visiting ol li .first {
+          top: 33px;
+          left: -201px;
+          transform: scaleX(-1); }
+        .visit .visiting ol li .second {
+          top: 42px;
+          right: -30px; }
+        .visit .visiting ol li .third {
+          top: 61px;
+          left: -201px;
+          transform: scaleX(-1); }
+        .visit .visiting ol li .fourth {
+          top: 46px;
+          right: -30px; }
+        .visit .visiting ol li .fifth {
+          top: 34px;
+          left: -203px; }
+        .visit .visiting ol li:before {
+          content: "";
+          width: 97px;
+          height: 68px;
+          position: absolute;
+          left: -145px;
+          top: 17px;
+          background-size: contain; }
+        .visit .visiting ol li span {
+          color: #222;
+          font-size: 22px;
+          font-family: "RobotoRegular";
+          display: block; }
+      .visit .visiting ol .transfer {
+        padding-bottom: 16px; }
+        .visit .visiting ol .transfer:before {
+          background: url(../../images/transfer.png) no-repeat;
+          top: 28px; }
+      .visit .visiting ol .guide {
+        padding-bottom: 12px; }
+        .visit .visiting ol .guide:before {
+          background: url(../../images/guide.png) no-repeat;
+          left: -128px; }
+      .visit .visiting ol .flat:before {
+        background: url(../../images/flat.png) no-repeat;
+        left: -106px; }
+      .visit .visiting ol .tickets:before {
+        background: url(../../images/tickets.png) no-repeat; }
+      .visit .visiting ol .booking:before {
+        background: url(../../images/booking.png) no-repeat;
+        left: -123px;
+        top: 25px; }
+    .visit .visiting .button {
+      margin: 0 auto;
+      width: 379px;
+      margin-top: -9px; }
+      .visit .visiting .button button {
+        width: 379px;
+        border-radius: 5px;
+        background-color: #FDF693;
+        outline: none;
+        border: 2px solid #CBC453;
+        font-size: 18px;
+        font-family: "RobotoRegular";
+        margin-top: 22px;
+        padding-top: 23px;
+        line-height: 5px;
+        padding-bottom: 23px;
+        color: #343433; }
+
+/*/VISIT*/
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
