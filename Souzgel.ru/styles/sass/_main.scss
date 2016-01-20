@@ -1085,3 +1085,68 @@ header{
     }
   }
 /*/VISIT*/
+
+.footer{
+  width: 100%;
+  height: 200px;
+  .add_appartaments{
+    padding-top:21px;
+    padding-bottom:46px;
+    .right_column{
+      padding-bottom: 43px;
+      margin-top: -21px;
+      padding-top: 0px;
+      position:relative;
+      z-index: 20;
+    }
+    div{
+      display: inline-block;
+      padding-top:10px;
+      padding-bottom:10px;
+    }
+    .dont_find{
+      padding-top:45px;
+      width: 300px;
+      margin:0 auto;
+      padding-bottom:17px;
+      h3{
+        font-size: 32px;
+        font-family: "RobotoBold";
+        color:#23598F;
+        text-align: left;
+        line-height: 38px;
+      }
+    }
+    .we_have{
+      font-size: 24px;
+      font-family: "RobotoRegular";
+      text-align: left;
+      display: inline-block;
+      width: 362px;
+      line-height: 25px;
+      padding-left: 14px;
+      p{
+        position: relative;
+        top: -22px;
+        span{
+          color:#23598F;
+        }
+        .blue_arrow{
+          position:absolute;
+          top: 28px;
+          right: -65px;
+        }
+      }
+    }
+  }
+  .map_ya{
+    width: 100%;
+    height: 402px;
+    position: relative;
+    z-index: 0;
+    .yandex{
+      position:relative;
+      z-index: 1;
+    }
+  }
+}

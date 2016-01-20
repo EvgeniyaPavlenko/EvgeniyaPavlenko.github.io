@@ -890,6 +890,59 @@ header {
         color: #343433; }
 
 /*/VISIT*/
+.footer {
+  width: 100%;
+  height: 200px; }
+  .footer .add_appartaments {
+    padding-top: 21px;
+    padding-bottom: 46px; }
+    .footer .add_appartaments .right_column {
+      padding-bottom: 43px;
+      margin-top: -21px;
+      padding-top: 0px;
+      position: relative;
+      z-index: 20; }
+    .footer .add_appartaments div {
+      display: inline-block;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    .footer .add_appartaments .dont_find {
+      padding-top: 45px;
+      width: 300px;
+      margin: 0 auto;
+      padding-bottom: 17px; }
+      .footer .add_appartaments .dont_find h3 {
+        font-size: 32px;
+        font-family: "RobotoBold";
+        color: #23598F;
+        text-align: left;
+        line-height: 38px; }
+    .footer .add_appartaments .we_have {
+      font-size: 24px;
+      font-family: "RobotoRegular";
+      text-align: left;
+      display: inline-block;
+      width: 362px;
+      line-height: 25px;
+      padding-left: 14px; }
+      .footer .add_appartaments .we_have p {
+        position: relative;
+        top: -22px; }
+        .footer .add_appartaments .we_have p span {
+          color: #23598F; }
+        .footer .add_appartaments .we_have p .blue_arrow {
+          position: absolute;
+          top: 28px;
+          right: -65px; }
+  .footer .map_ya {
+    width: 100%;
+    height: 402px;
+    position: relative;
+    z-index: 0; }
+    .footer .map_ya .yandex {
+      position: relative;
+      z-index: 1; }
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
