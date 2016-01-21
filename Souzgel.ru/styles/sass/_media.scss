@@ -233,12 +233,32 @@
 			width: 100%;
 			margin-bottom: 209px;
 			top:-159px;
+			p{
+				font-size: 24px;
+				line-height: 30px;
+			}
+			.sale_abs{
+				right: 148px;
+    			top: 111px;
+
+				img{
+					width: 100px;
+					height: 100px;
+				}
+			}
 		}
 		.right_column{
 			min-width: 100%;
 			position:absolute;
-			bottom:-51px;
-			margin-top: 208px;
+			bottom:-21px;
+			span{
+				font-size: 24px;
+				margin-top: 29px;
+			}
+			p{
+				font-size: 18px;
+				text-align: center;
+			}
 		}
 		.house_img{
 			width: 100%;
@@ -247,9 +267,10 @@
 			margin-bottom:200px;
 			display: block;
 			margin-top: 161px;
-			img{
-				height: 209px;
-			}
+			background-image:url(../../images/sunny.jpg);
+			background-size:cover;
+			background-position:50% 50%;
+			background-color:red;
 		}
 
 	}
@@ -257,9 +278,44 @@
 
 	/*SERTIFICATES*/
 		.sertificates{
-			display: none;
+			min-width: 320px;
+			.sertificates_right{
+				display: none;
+			}
+			.sertificates_left{
+				display: block;
+				min-width: 320px;
+				mark{
+					font-size: 24px !important;
+				}
+			}
 		}
 	/*/SERTIFICATES*/
+
+	/*COMMENTS*/
+
+		.comments{
+			h3{
+				font-size: 18px;
+			}
+			p{
+				font-size: 18px;
+			}
+		}
+
+	/*/COMMENTS*/
+
+	/*MAP*/
+		.map{
+			display: none;
+		}
+	/*/MAP*/
+
+	/*TEAM*/
+		.team{
+			display: none;
+		}
+	/*/TEAM*/
 
 	/*CHIEF*/
 		.chief{
@@ -268,7 +324,7 @@
 	/*/CHIEF*/
 
 	/*FOOTER*/
-		.ya_map{
+		.map_ya{
 			display: none;
 		}
 	/*/FOOTER*/
