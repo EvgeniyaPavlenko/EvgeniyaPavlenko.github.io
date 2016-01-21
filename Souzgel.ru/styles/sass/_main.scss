@@ -317,6 +317,7 @@ header{
         width: 100%;
         height: 257px;
         margin-bottom: 31px;
+        overflow: hidden;
       }
       h3{
           color:#23598F;
@@ -417,13 +418,13 @@ header{
 .choose_apartaments{
   background-color:#23598F;
   width: 100%;
-  padding-bottom:57px;
+  padding-bottom:60px;
   .container{
-    height: 942px;
     background-color:#fff;
     color:#23598F;
     padding-top:49px;
     text-align: center;
+    padding-bottom:80px;
     form{
       padding-top:55px;
       input[type="checkbox"]{
@@ -594,6 +595,9 @@ header{
   background-position:50% 50%;
   .right_column{
     margin-top: 142px;
+  }
+  .house_img{
+    display: none;
   }
   .sea_view{
     min-width: 480px;

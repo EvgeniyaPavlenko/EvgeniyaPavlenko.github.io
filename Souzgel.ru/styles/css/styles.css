@@ -267,7 +267,8 @@ header {
       .popular .popular_container .popular_item .item_img {
         width: 100%;
         height: 257px;
-        margin-bottom: 31px; }
+        margin-bottom: 31px;
+        overflow: hidden; }
       .popular .popular_container .popular_item h3 {
         color: #23598F;
         padding: 0; }
@@ -351,13 +352,13 @@ header {
 .choose_apartaments {
   background-color: #23598F;
   width: 100%;
-  padding-bottom: 57px; }
+  padding-bottom: 60px; }
   .choose_apartaments .container {
-    height: 942px;
     background-color: #fff;
     color: #23598F;
     padding-top: 49px;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 80px; }
     .choose_apartaments .container form {
       padding-top: 55px; }
       .choose_apartaments .container form input[type="checkbox"] {
@@ -498,6 +499,8 @@ header {
   background-position: 50% 50%; }
   .sunny .right_column {
     margin-top: 142px; }
+  .sunny .house_img {
+    display: none; }
   .sunny .sea_view {
     min-width: 480px;
     background-color: #fff;
@@ -941,6 +944,220 @@ header {
       position: relative;
       z-index: 1; }
 
+@media screen and (max-width: 960px) {
+  /*GENERAL*/
+  .arrow, .arrow_blue, .arrow_gray, .arrow_abs, .blue_arrow {
+    display: none; }
+
+  /*/GENERAL*/
+  .container {
+    width: 100%; }
+
+  /*HEADER*/
+  header nav {
+    display: none; }
+  header .contacts {
+    padding-right: 10px; }
+  header .logo {
+    padding-left: 10px; }
+
+  /*/HEADER*/
+  /*APART_MAIN*/
+  .apart_main .container div {
+    display: block;
+    width: 100%; }
+  .apart_main .container .left_column {
+    min-width: 100%;
+    display: block; }
+    .apart_main .container .left_column .price h1 {
+      font-size: 38px;
+      max-width: 283px;
+      line-height: 40px;
+      margin-bottom: 0; }
+    .apart_main .container .left_column .price .normal {
+      font-size: 32px;
+      padding-left: 13px;
+      padding-right: 0px;
+      width: 285px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      margin-bottom: 23px;
+      margin-top: 13px; }
+    .apart_main .container .left_column .q_ty {
+      padding-bottom: 6px; }
+      .apart_main .container .left_column .q_ty ul {
+        margin-top: -6px;
+        padding-top: 37px; }
+        .apart_main .container .left_column .q_ty ul li {
+          width: 191px;
+          font-size: 24px;
+          padding-bottom: 30px;
+          line-height: 28px; }
+        .apart_main .container .left_column .q_ty ul .width {
+          width: 240px; }
+  .apart_main .container .right_column {
+    min-width: 100%;
+    display: block;
+    padding-bottom: 24px;
+    border-bottom: 53px solid #F2F2F2; }
+    .apart_main .container .right_column span {
+      font-size: 24px;
+      text-align: center;
+      margin-top: 33px; }
+    .apart_main .container .right_column p {
+      font-size: 18px;
+      width: 300px;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 23px;
+      padding-bottom: 9px; }
+      .apart_main .container .right_column p span {
+        font-size: 18px; }
+    .apart_main .container .right_column .arrow {
+      display: none; }
+    .apart_main .container .right_column form {
+      margin-top: -2px; }
+      .apart_main .container .right_column form input {
+        width: 250px;
+        padding-left: 20px;
+        margin: 0 auto;
+        margin-bottom: 13px;
+        padding-right: 12px;
+        padding-left: 0px; }
+      .apart_main .container .right_column form input[type="submit"] {
+        font-size: 18px;
+        padding-right: 12px;
+        padding-left: 0px; }
+
+  /*/APART MAIN*/
+  /*UNION*/
+  .union {
+    display: none; }
+
+  /*/UNION*/
+  /*POPULAR*/
+  .popular {
+    clear: both; }
+    .popular h3 {
+      font-size: 24px;
+      padding-top: 34px;
+      width: 300px;
+      margin: 0 auto;
+      line-height: 31px;
+      padding-bottom: 13px; }
+    .popular p {
+      font-size: 18px;
+      width: 300px;
+      margin: 0 auto;
+      line-height: 22px; }
+    .popular .popular_container .popular_item {
+      min-width: 94%;
+      margin-right: 3%;
+      margin-left: 3%;
+      padding-bottom: 21px;
+      display: block; }
+      .popular .popular_container .popular_item .item_img {
+        height: 183px;
+        margin-bottom: 14px; }
+      .popular .popular_container .popular_item .item {
+        padding-bottom: 17px !important; }
+      .popular .popular_container .popular_item .level {
+        font-size: 16px;
+        line-height: 8px; }
+
+  /*/POPULAR*/
+  /*CHOOSE_APARTAMENTS*/
+  .choose_apartaments {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 20px;
+    clear: both;
+    margin-top: -23px;
+    padding-top: 21px; }
+    .choose_apartaments .container {
+      padding-bottom: 39px; }
+      .choose_apartaments .container h3 {
+        font-size: 24px;
+        width: 200px;
+        margin: 0 auto;
+        text-align: center; }
+      .choose_apartaments .container form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding-top: 34px; }
+        .choose_apartaments .container form input[type="checkbox"] + label {
+          display: block;
+          text-align: left;
+          width: 200px;
+          margin: 0 auto;
+          margin-bottom: 20px; }
+        .choose_apartaments .container form .price_form {
+          text-align: left;
+          margin-top: 15px;
+          width: 200px;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          padding-top: 8px; }
+          .choose_apartaments .container form .price_form input {
+            margin-top: 2px;
+            display: block;
+            padding-bottom: 10px; }
+          .choose_apartaments .container form .price_form label {
+            display: block; }
+        .choose_apartaments .container form .to_the_sea {
+          margin-top: -37px; }
+          .choose_apartaments .container form .to_the_sea p {
+            max-width: 258px;
+            margin: 0 auto;
+            margin-bottom: -18px; }
+        .choose_apartaments .container form .leave_cont p {
+          font-size: 26px;
+          max-width: 300px; }
+        .choose_apartaments .container form .leave_cont input[type="text"], .choose_apartaments .container form .leave_cont button {
+          max-width: 280px; }
+
+  /*/CHOOSE_APARTAMENTS*/
+  /*SUNNY*/
+  .sunny {
+    position: relative;
+    background-image: none; }
+    .sunny .sea_view {
+      position: absolute;
+      margin-top: 0;
+      width: 100%;
+      margin-bottom: 209px;
+      top: -159px; }
+    .sunny .right_column {
+      min-width: 100%;
+      position: absolute;
+      bottom: -51px;
+      margin-top: 208px; }
+    .sunny .house_img {
+      width: 100%;
+      height: 209px;
+      clear: both;
+      margin-bottom: 200px;
+      display: block;
+      margin-top: 161px; }
+      .sunny .house_img img {
+        height: 209px; }
+
+  /*/SUNNY*/
+  /*SERTIFICATES*/
+  .sertificates {
+    display: none; }
+
+  /*/SERTIFICATES*/
+  /*CHIEF*/
+  .chief {
+    display: none; }
+
+  /*/CHIEF*/
+  /*FOOTER*/
+  .ya_map {
+    display: none; }
+
+  /*/FOOTER*/ }
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
