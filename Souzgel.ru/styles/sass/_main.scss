@@ -102,15 +102,13 @@ h3{
   }
 }
 
-
-
-
-
 /*HEADER*/
 header{
   width: 100%;
   height: 75px;
   background-color:#23598F;
+  position:fixed;
+  z-index: 100;
   .logo{
     font-family: 'PT Sans Narrow', sans-serif;
     font-weight: normal;
@@ -169,9 +167,9 @@ header{
 /*APART MAIN*/
 .apart_main{
   width: 100%;
-  height: 725px;
-  background:url(../../images/1st.jpg) no-repeat 50% 50%;
-  background-size:cover;
+  padding-top: 76px;
+  padding-bottom: 205px;
+
   .container{
     padding-top:50px;
     .left_column{
@@ -944,9 +942,9 @@ header{
 /*VISIT*/
   .visit{
     width: 100%;
-    background-image:url(../../images/visit_back.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
+    // background-image:url(../../images/visit_back.jpg);
+    // background-size:cover;
+    // background-repeat:no-repeat;
     padding-bottom:76px;
     h4{
       font-size: 32px;
