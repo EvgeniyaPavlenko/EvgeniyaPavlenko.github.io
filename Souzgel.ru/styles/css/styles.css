@@ -954,12 +954,14 @@ header {
     width: 100%; }
 
   /*HEADER*/
-  header nav {
-    display: none; }
-  header .contacts {
-    padding-right: 10px; }
-  header .logo {
-    padding-left: 10px; }
+  header {
+    position: absolute; }
+    header nav {
+      display: none; }
+    header .contacts {
+      padding-right: 10px; }
+    header .logo {
+      padding-left: 10px; }
 
   /*/HEADER*/
   /*APART_MAIN*/
@@ -984,7 +986,8 @@ header {
       margin-bottom: 23px;
       margin-top: 13px; }
     .apart_main .container .left_column .q_ty {
-      padding-bottom: 6px; }
+      padding-bottom: 6px;
+      margin-top: -8px; }
       .apart_main .container .left_column .q_ty ul {
         margin-top: -6px;
         padding-top: 37px; }
@@ -1027,7 +1030,8 @@ header {
       .apart_main .container .right_column form input[type="submit"] {
         font-size: 18px;
         padding-right: 12px;
-        padding-left: 0px; }
+        padding-left: 7px;
+        width: 268px; }
 
   /*/APART MAIN*/
   /*UNION*/
@@ -1124,14 +1128,18 @@ header {
     .sunny .sea_view {
       position: absolute;
       margin-top: 0;
-      width: 100%;
+      min-width: 320px !important;
       margin-bottom: 209px;
-      top: -159px; }
+      top: -159px;
+      left: 0; }
       .sunny .sea_view p {
+        width: 320px;
         font-size: 24px;
         line-height: 30px; }
+      .sunny .sea_view span {
+        width: 320px; }
       .sunny .sea_view .sale_abs {
-        right: 148px;
+        right: -6px;
         top: 111px; }
         .sunny .sea_view .sale_abs img {
           width: 100px;
@@ -1161,21 +1169,58 @@ header {
   /*/SUNNY*/
   /*SERTIFICATES*/
   .sertificates {
-    min-width: 320px; }
-    .sertificates .sertificates_right {
+    padding-bottom: 40px;
+    clear: both;
+    padding-top: 60px; }
+    .sertificates .container .sertificates_right {
       display: none; }
-    .sertificates .sertificates_left {
+    .sertificates .container .sertificates_left {
       display: block;
-      min-width: 320px; }
-      .sertificates .sertificates_left mark {
-        font-size: 24px !important; }
+      margin: 0 auto;
+      width: 300px; }
+      .sertificates .container .sertificates_left mark {
+        font-size: 24px !important;
+        width: 281px;
+        padding-right: 10px; }
+        .sertificates .container .sertificates_left mark:first-child {
+          display: block; }
+        .sertificates .container .sertificates_left mark:nth-child(2) {
+          width: 271px;
+          line-height: 24px;
+          padding-bottom: 10px; }
+      .sertificates .container .sertificates_left p {
+        font-size: 18px;
+        width: 271px;
+        padding-top: 21px;
+        padding-top: 24px;
+        line-height: 22px;
+        margin: 0 auto; }
+        .sertificates .container .sertificates_left p + p {
+          padding-bottom: 19px;
+          padding-top: 10px; }
+      .sertificates .container .sertificates_left span {
+        font-size: 18px;
+        padding-top: 10px;
+        line-height: 11px;
+        display: block;
+        width: 320px;
+        margin: 0 auto;
+        padding-left: 13px; }
 
   /*/SERTIFICATES*/
   /*COMMENTS*/
-  .comments h3 {
-    font-size: 18px; }
-  .comments p {
-    font-size: 18px; }
+  .comments {
+    padding-bottom: 50px; }
+    .comments h3 {
+      font-size: 24px;
+      padding-top: 33px;
+      width: 206px;
+      margin: 0 auto; }
+    .comments p {
+      font-size: 18px;
+      width: 287px !important;
+      margin: 0 auto;
+      text-align: center; }
 
   /*/COMMENTS*/
   /*MAP*/
@@ -1193,9 +1238,74 @@ header {
     display: none; }
 
   /*/CHIEF*/
+  /*VISIT*/
+  .visit {
+    width: 100%; }
+    .visit .container {
+      width: 100%;
+      background-color: #fff;
+      padding-bottom: 35px; }
+      .visit .container .visit_h4 {
+        color: #23598F;
+        font-size: 24px;
+        width: 296px;
+        margin: 0 auto; }
+      .visit .container .visiting {
+        max-width: 100%;
+        width: 100%; }
+        .visit .container .visiting h4 {
+          font-size: 18px; }
+        .visit .container .visiting ol {
+          width: 224px;
+          margin: 0 auto; }
+          .visit .container .visiting ol li {
+            font-size: 18px;
+            margin-bottom: -9px; }
+            .visit .container .visiting ol li:before {
+              display: none; }
+            .visit .container .visiting ol li span {
+              font-size: 18px; }
+        .visit .container .visiting button {
+          width: 300px;
+          margin: 0 auto;
+          margin-top: 20px;
+          display: block; }
+
+  /*/VISIT*/
   /*FOOTER*/
-  .map_ya {
+  .footer .map_ya {
     display: none; }
+  .footer .dont_find {
+    background-color: #F2F2F2;
+    min-width: 100%;
+    padding-bottom: 10px; }
+    .footer .dont_find h3 {
+      width: 200px;
+      text-align: center !important;
+      margin: 0 auto; }
+  .footer .we_have {
+    background-color: #F2F2F2;
+    width: 100% !important; }
+    .footer .we_have p {
+      width: 300px;
+      margin: 0 auto; }
+  .footer .add_appartaments {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: -123px; }
+    .footer .add_appartaments h3 {
+      font-size: 24px;
+      text-align: center; }
+    .footer .add_appartaments p {
+      font-size: 18px;
+      text-align: center; }
+    .footer .add_appartaments .right_column {
+      min-width: 100%; }
+      .footer .add_appartaments .right_column p {
+        width: 298px;
+        margin: 0 auto;
+        padding-left: 0; }
 
   /*/FOOTER*/ }
 html {

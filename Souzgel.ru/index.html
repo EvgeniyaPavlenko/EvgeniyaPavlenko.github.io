@@ -18,6 +18,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
+	<script src="script/plugins-scroll.js"></script>
 	<script src="script/owl.carousel.js"></script>
 	<script src="script/popup.js"></script>
 	<script src="script/parallax.js"></script>
@@ -31,11 +32,11 @@
 			<span class="logo">СОЮЗ ЗАСТРОЙЩИКОВ ГЕЛЕНДЖИКА</span>
 			<nav>
 				<ul>
-					<li><a href="#">Объекты</a></li>
-					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Команда</a></li>
-					<li><a href="#">О Нас</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="#objects" class="active_a">Объекты</a></li>
+					<li><a href="#comments" class="active_a">Отзывы</a></li>
+					<li><a href="#team" class="active_a">Команда</a></li>
+					<li><a href="#sertificates" class="active_a">О Нас</a></li>
+					<li><a href="#contacts" class="active_a">Контакты</a></li>
 				</ul>
 			</nav>
 			<span class="contacts">8 800 555 40 77<span>звонок по России бесплатный</span></span>
@@ -93,7 +94,7 @@
 		</div>
 	</section>
 
-	<section class="popular">
+	<section class="popular" id="objects">
 		<div class="container">
 			<h3>САМЫЕ ПОПУЛЯРНЫЕ НОВОСТРОЙКИ</h3>
 			<p>Мы предлагаем квартиры в 38 новостройках Геленджика.</p>
@@ -218,13 +219,13 @@
 		</div>
 	</section>
 
-	<section class="sertificates">
+	<section class="sertificates" id="sertificates">
 		<div class="container">
 			<div class="sertificates_left">
 				<mark>ПОЧЕМУ МЫ РАБОТАЕМ</mark><mark>ДЛЯ ВАС БЕСПЛАТНО?</mark>
 				<p>Мы не берем проценты и платежи за свои услуги и предлагаем цены на квартиры от застройщика</p>
 				<p>Все потому, что являемся официальным объедененным отделом продаж крупнейших застройщиков Геленджика</p>
-				<span>Зарплату нам платит застройщик,</span> <span>а не покупатель</span>
+				<span>Зарплату нам платит застройщик,</span> <span>а не покупатель!</span>
 
 			</div>
 			<div class="sertificates_right">
@@ -263,7 +264,7 @@
 		</form>
 	</section>
 
-	<section class="comments">
+	<section class="comments" id="comments">
 		<div class="container">
 			<h3>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h3>
 			<p>За 5 лет работы мы помогли более 350 семьям найти квартиру мечты.</p> 
@@ -283,7 +284,7 @@
 		</div>
 	</section>
 
-	<section class="team">
+	<section class="team" id="team">
 		<div class="container">
 			<h3>КТО БУДЕТ ВАМ ПОМОГАТЬ?</h3>
 			<p>Эксперты рынка недвижимости Геленджика и профессионалы своего дела.</p>
@@ -329,7 +330,7 @@
 
 	<section class="visit" class="parallax-window" data-parallax="scroll" data-image-src="images/visit_back.jpg">
 		<div class="container">
-			<h4>"ПЛАНИРУЕТЕ ПОСЕТИТЬ ГЕЛЕНДЖИК В ЭТОМ ГОДУ?"</h4>
+			<h4 class="visit_h4">"ПЛАНИРУЕТЕ ПОСЕТИТЬ ГЕЛЕНДЖИК В ЭТОМ ГОДУ?"</h4>
 			<div class="visiting">
 				<h4>Организуем ваш приезд бесплатно!</h4>
 				<ol>
@@ -344,7 +345,7 @@
 		</div>
 	</section>
 
-	<section class="footer">
+	<section class="footer" id="contacts">
 		<div class="container">
 			<div class="add_appartaments">
 				<div class="dont_find"><h3>НЕ НАШЛИ ПОДХОДЯЩУЮ КВАРТИРУ?</h3></div>
@@ -371,5 +372,23 @@
 				</div>
 			</div>
 	</section>
+
+
+<script src="script/plugins-scroll.js"></script>
+<script>
+// Skroll-page
+$(document).ready(function() {
+    //Chrome Smooth Scroll
+    try {
+        $.browserSelector();
+        if($("html").hasClass("chrome")) {
+            $.smoothScroll();
+        }
+    } catch(err) {
+
+    };
+
+});</script> 
+
 </body>
 </html>

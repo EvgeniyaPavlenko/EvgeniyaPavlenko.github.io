@@ -11,6 +11,7 @@
 
 	/*HEADER*/
 		header{
+			position:absolute;
 			nav{
 				display: none;
 			}
@@ -53,6 +54,7 @@
 				}
 				.q_ty{
 					padding-bottom:6px;
+					margin-top: -8px;
 					ul{
 						margin-top: -6px;
     					padding-top: 37px;
@@ -105,7 +107,8 @@
 					input[type="submit"]{
 						font-size: 18px;
 						padding-right: 12px;
-    					padding-left: 0px;
+					    padding-left: 7px;
+					    width: 268px;
 					}
 				}
 			}
@@ -230,15 +233,20 @@
 		.sea_view{
 			position: absolute;
 			margin-top: 0;
-			width: 100%;
+			min-width: 320px !important;
 			margin-bottom: 209px;
 			top:-159px;
-			p{
+			left: 0;
+			p{	
+				width: 320px;
 				font-size: 24px;
 				line-height: 30px;
 			}
+				span{
+					width: 320px;
+				}
 			.sale_abs{
-				right: 148px;
+				right: -6px;
     			top: 111px;
 
 				img{
@@ -278,28 +286,73 @@
 
 	/*SERTIFICATES*/
 		.sertificates{
-			min-width: 320px;
-			.sertificates_right{
-				display: none;
-			}
-			.sertificates_left{
-				display: block;
-				min-width: 320px;
-				mark{
-					font-size: 24px !important;
+			padding-bottom:40px;
+			clear: both;
+			padding-top:60px;
+			.container{
+				.sertificates_right{
+					display: none;
+				}
+				.sertificates_left{
+					display: block;
+					margin:0 auto;
+					width: 300px;
+					mark{
+						font-size: 24px !important;
+						width: 281px;
+    					padding-right: 10px;
+    					&:first-child{
+    						display: block;
+
+    					}
+						&:nth-child(2){
+							width: 271px;
+						    line-height: 24px;
+						    padding-bottom: 10px
+						}
+					}
+					p{
+						font-size: 18px;
+						width: 271px;
+						padding-top:21px;
+						padding-top: 24px;
+    					line-height: 22px; 
+    					margin:0 auto;
+    					&+p{
+    						 padding-bottom: 19px;
+    						padding-top: 10px
+    					}
+					}
+					span{
+						font-size: 18px;
+						padding-top:10px;
+						line-height: 11px;
+						display: block;
+						width: 320px;
+						margin:0 auto;
+						padding-left: 13px;
+					}
 				}
 			}
 		}
+
 	/*/SERTIFICATES*/
 
 	/*COMMENTS*/
 
 		.comments{
+			padding-bottom:50px;
 			h3{
-				font-size: 18px;
+				font-size: 24px;
+			    padding-top: 33px;
+			    width: 206px;
+			    margin: 0 auto;
 			}
 			p{
 				font-size: 18px;
+				width: 287px !important;
+			    margin: 0 auto;
+			    text-align: center;
 			}
 		}
 
@@ -323,12 +376,99 @@
 		}
 	/*/CHIEF*/
 
+	/*VISIT*/
+	.visit{
+		width: 100%;
+		.container{
+			width: 100%;
+			background-color:#fff;
+			padding-bottom:35px;
+			.visit_h4{
+				color:#23598F;
+				font-size: 24px;
+				width: 296px;
+				margin:0 auto;
+			}
+			.visiting{
+				max-width: 100%;
+				width: 100%;
+				h4{
+					font-size: 18px;
+				}
+				ol{
+					width: 224px;
+					margin:0 auto;
+					li{
+						font-size: 18px;
+						margin-bottom:-9px;
+						&:before{
+							display: none;
+						}
+						span{
+							font-size: 18px;
+						}
+					}
+				}
+				button{
+					width: 300px;
+					margin:0 auto;
+					margin-top: 20px;
+					display: block;
+				}
+
+			}
+		}
+	}
+	/*/VISIT*/
+
+
 	/*FOOTER*/
-		.map_ya{
+
+		.footer{
+			.map_ya{
 			display: none;
+			}	
+			.dont_find{
+				background-color:#F2F2F2;
+				min-width: 100%;
+				padding-bottom:10px;
+				h3{
+					width: 200px;
+					text-align: center !important;
+					margin:0 auto;
+				}
+			}
+			.we_have{
+				background-color:#F2F2F2;
+				width: 100% !important;
+				p{
+					width: 300px;
+					margin:0 auto;
+				}
+			}
+			.add_appartaments{
+				width: 100%;
+				display: block;
+				text-align: center;
+				margin-top: -123px;
+				h3{
+					font-size: 24px;
+					text-align:center;
+				}
+				p{
+					font-size: 18px;
+					text-align: center;
+				}
+				.right_column{
+					min-width: 100%;
+					p{
+						width: 298px;
+    					margin: 0 auto;
+    					padding-left:0;
+					}
+				}
+			}
 		}
 	/*/FOOTER*/
-
-
 
 }

@@ -79,6 +79,15 @@ $(document).ready(function() {
   });
 
   $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
+
+   $("a.active_a").click(function () { 
+      var elementClick = $(this).attr("href");
+      var destination = $(elementClick).offset().top;
+      $('html,body,section').animate( { scrollTop: destination }, 1100 );
+      return false;
+    });
+
+   
  
 });
 
