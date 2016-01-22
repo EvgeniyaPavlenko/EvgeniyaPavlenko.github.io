@@ -87,7 +87,21 @@ $(document).ready(function() {
       return false;
     });
 
-   
+var top_show = 150; // the position of the scroll bar to display a button
+  var delay = 1000; // scroll delay
+  $(document).ready(function() {
+    $(window).scroll(function () { // If you fall into this scrolling function
+      /* Depending on the position of the scroll bar, and the value top_show, close or open the "Top"*/
+      if ($(this).scrollTop() > top_show) $('#top').fadeIn();
+      else $('#top').fadeOut();
+    });
+    $('#top').click(function () { //Clicking on the "Back" get into this function
+      /* Smooth scrolling up */
+      $('body, html').animate({
+        scrollTop: 0
+      }, delay);
+    });
+  });
  
 });
 

@@ -944,6 +944,21 @@ header {
       position: relative;
       z-index: 1; }
 
+/*BUTTON*/
+#top {
+  bottom: 0;
+  cursor: pointer;
+  display: none;
+  font-size: 150%;
+  position: fixed;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  margin-right: 40px;
+  margin-bottom: 45px;
+  background-image: url(../../images/arrow_up.png);
+  background-size: cover; }
+
 @media screen and (max-width: 960px) {
   /*GENERAL*/
   .arrow, .arrow_blue, .arrow_gray, .arrow_abs, .blue_arrow {
