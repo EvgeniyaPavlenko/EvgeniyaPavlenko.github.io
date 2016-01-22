@@ -34,6 +34,7 @@ h3{
   font-size: 32px;
   font-family: "RobotoBold";
   text-align: center;
+  font-weight: 300px;
 }
 
 .right_column{
@@ -73,6 +74,7 @@ h3{
       display: inline;
       font-family: "RobotoBold";
       font-size: 24px;
+      font-weight: 300px;
     }
   }
   form{
@@ -95,11 +97,16 @@ h3{
       font-size: 20px;
       font-family: "RobotoBold";
       margin-top: 11px;
+      font-weight: 300px;
     }
     input::-webkit-input-placeholder {
       padding-left:10px;
     }
   }
+}
+
+input::-webkit-input-placeholder{
+  padding-left:20px;
 }
 
 /*HEADER*/
@@ -143,6 +150,7 @@ header{
           color:#fff;
           background-color:#4BB5CB;
           font-weight: bold;
+          font-weight: 300px;
         }
       }
     }
@@ -188,6 +196,7 @@ header{
           padding-left: 38px;
           margin-top: 3px;
           line-height: 52px;
+          font-weight: 300px;
         }
         .normal{
           display: block;
@@ -204,6 +213,7 @@ header{
             display: inline;
             margin-left: 2px;
             font-family: "RobotoBold";
+            font-weight: 300px;
           }
         }
        }
@@ -372,8 +382,8 @@ header{
           width: 43px;
           height: 43px;
           position:absolute;
-          left:-55px;
-          background:url(../../images/icon-2room.png) no-repeat 50% 50%;
+          left:-54px;
+          background:url(../../images/icon-3room.png) no-repeat 50% 50%;
           background-size:cover;
         }
         .room_3:before{
@@ -381,8 +391,8 @@ header{
           width: 43px;
           height: 43px;
           position:absolute;
-          left:-50px;
-          background:url(../../images/icon-3room.png) no-repeat 50% 50%;
+          left:-55px;
+          background:url(../../images/icon-2room.png) no-repeat 50% 50%;
           background-size:cover;
         }
         .price:before{
@@ -390,7 +400,7 @@ header{
           width: 43px;
           height: 43px;
           position:absolute;
-          left:-50px;
+          left:-54px;
           background:url(../../images/icon-price.png) no-repeat 50% 50%;
           background-size:cover;
         }
@@ -453,6 +463,7 @@ header{
         &:last-child{
           margin-right: 0;
         }
+
       }
       .price_form{
         margin-top: 64px;
@@ -518,6 +529,15 @@ header{
             text-align: center;
             margin-top: 20px;
             font-size: 18px;
+            &:before{
+              content:"";
+              width: 2px;
+              height: 5px;
+              position:absolute;
+              background-color:#CCCCCC;
+              top: -19px;
+              left: 15px;
+              }
           }
         }
       }
@@ -547,6 +567,7 @@ header{
           padding-top: 29px;
           line-height: 32px;
           padding-bottom:33px;
+          font-weight: 300px;
         }
         input{
           width:378px;
@@ -589,30 +610,33 @@ header{
 
 .sunny{
   width: 100%;
-  height: 638px;
   background-image:url(../../images/sunny.jpg);
   background-size:cover;
   background-position:50% 50%;
+  padding-bottom:295px;
   .right_column{
     margin-top: 142px;
+    float: right !important;
   }
   .house_img{
     display: none;
   }
   .sea_view{
-    min-width: 480px;
+    width: 480px;
     background-color: #fff;
-    float: right;
+    display: inline-block;
     margin-top: 186px;
     padding-left: 21px;
     line-height: 36px;
     padding-top: 24px;
     padding-bottom: 25px;
     position:relative;
+   margin-left: 80px;
     .sale_abs{
       position:absolute;
       right: -26px;
       top: -98px;
+      z-index: 200;
     }
     p{
       font-size: 32px;
@@ -620,6 +644,7 @@ header{
       color:#23598F;
       text-transform: uppercase;
       margin-left:10px;
+      font-weight: 300px;
       span{
         color:#4BB5CB;
         display: block;
@@ -641,7 +666,6 @@ header{
       margin-left: 40px;
       margin-top: 83px;
       mark{
-        width: 393px;
         background-color:#215487;
         font-size: 32px;
         color:#fff;
@@ -650,6 +674,13 @@ header{
         line-height: 41px;
         padding-right: 16px;
         padding-left: 13px;
+        font-weight: 300px;
+        display: block;
+        padding-left:10px;
+        width: 374px;
+        &+mark{
+          width: 351px;
+        }
       }
       p{
         font-size: 24px;
@@ -734,6 +765,7 @@ header{
       text-align: center;
       padding-top:46px;
       padding-bottom:9px;
+      font-weight: 300px;
     }
     input{
       min-width:438px;
@@ -777,11 +809,32 @@ header{
   background-color:#EEF3F8;
   padding-bottom:122px;
   #owl-demo .item iframe{
+    position:relative;
     display: block;
     width: 80%;
     height: 460px;
     margin:0 auto;
   }
+
+
+  .owl-prev{
+    position: absolute;
+    top: 137px;
+    left: 1px;
+    height: 200px;
+    font-size: 0 !important;
+    background-color:#285C8C;
+    }
+
+     .owl-next{
+     position: absolute;
+     top: 137px;
+     right: 1px;
+     height: 200px;
+     font-size: 0 !important;
+      background-color:#285C8C;
+    }
+
   p{
     font-size: 24px;
     font-family: "RobotoRegular";
@@ -797,6 +850,7 @@ header{
     color:#23598F;
     text-align: center;
     padding-top:68px;
+    font-weight: 300px;
   }
 }
 /*/COMMENTS*/
@@ -820,6 +874,7 @@ header{
     color:#23598F;
     text-align: center;
     padding-top:68px;
+    font-weight: 300px;
   }
 
   .team_member{
@@ -855,6 +910,7 @@ header{
       padding-top: 29px;
       display: block;
       padding-left: 2px;
+      font-weight: 300px;
     }
       .position{
         display: block;
@@ -920,6 +976,7 @@ header{
     margin:0 auto;
     line-height: 38px;
     padding-bottom:17px;
+    font-weight: 300px;
   }
   span{
     display: block;
@@ -956,6 +1013,7 @@ header{
       text-align: center;
       padding-top: 59px;
       line-height: 39px;
+      font-weight: 300px;
     }
     .visiting{
       max-width:620px;
@@ -972,6 +1030,7 @@ header{
         padding-top:16px;
         padding-bottom:16px;
         background-color:#23598F;
+        font-weight: 300px;
       }
 
       ol{
@@ -1114,6 +1173,7 @@ header{
         color:#23598F;
         text-align: left;
         line-height: 38px;
+        font-weight: 300px;
       }
     }
     .we_have{

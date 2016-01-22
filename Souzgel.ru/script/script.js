@@ -67,7 +67,10 @@ $(document).ready(function() {
       navigation : true, // Show next and prev buttons
       slideSpeed : 300,
       paginationSpeed : 400,
-      singleItem:true
+      singleItem:true,
+      dragBeforeAnimFinish : true,
+      mouseDrag : true,
+      touchDrag : true,
  
       // "singleItem:true" is a shortcut for:
       // items : 1, 
@@ -77,6 +80,9 @@ $(document).ready(function() {
       // itemsMobile : false
  
   });
+
+  var owl = $("#owl-demo").data('owlCarousel');
+  $("#owl-demo:before").click(function(){ alert("before") })
 
   $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
 

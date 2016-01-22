@@ -7,7 +7,6 @@
 	
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/jquery-ui.css">
-	<link rel="stylesheet" href="styles/css/styles.css">
 	<link rel="stylesheet" href="styles/css/popup.css">
 
 		<!-- Important Owl stylesheet -->
@@ -15,6 +14,8 @@
 	 
 	<!-- Default Theme -->
 	<link rel="stylesheet" href="styles/css/owl.theme.css">
+	<link rel="stylesheet" href="styles/css/styles.css">
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
@@ -181,7 +182,7 @@
 				<label for="r3"><span></span>3 и более</label>
 				<div class="price_form">
 					<label for="price_from">Цена от</label><input type="text" id="price_from" placeholder="1900000" class="price_from_i">
-					<label for="price_to">до</label><input type="text" id="price_to" class="price_to_i">рублей
+					<label for="price_to">до</label><input type="text" id="price_to" class="price_to_i"><span class="disareare">рублей</span>
 				</div>
 
 				<div class="to_the_sea">
@@ -203,6 +204,13 @@
 
 	<section class="sunny">
 		<div class="container">
+			<div class="sea_view">
+				<p>Квартиры с видом</p> <p>на море от 1 625 000 руб. <span>в ЖК СОЛНЕЧНЫЙ 2</span></p>
+				<div class="sale_abs"><img src="images/sale.png" alt=""></div>
+			</div>
+
+		<div class="house_img"><img src="images/sunny.jpg" alt=""></div>
+
 			<div class="right_column">
 				<span>Оставьте контакты</span>
 				<p>Мы отправим планировки и цены квартир участвующих <br>в акции ПРЯМО СЕЙЧАС!</p>
@@ -211,11 +219,6 @@
 					<input type="text" name="contacts" placeholder=" Номер телефона">
 					<input type="submit" value="Получить варианты квартир" class="submit">
 				</form>
-			</div>
-			<div class="house_img"></div>
-			<div class="sea_view">
-				<p>Квартиры с видом</p> <p>на море от 1 625 000 руб. <span>в ЖК СОЛНЕЧНЫЙ 2</span></p>
-				<div class="sale_abs"><img src="images/sale.png" alt=""></div>
 			</div>
 		</div>
 	</section>
@@ -271,6 +274,7 @@
 			<p>За 5 лет работы мы помогли более 350 семьям найти квартиру мечты.</p> 
 			<p>Некоторых из них мы попросили оставить отзыв о нас</p>
 
+			
 
 			<div id="owl-demo" class="owl-carousel owl-theme">
 			  <div class="item">
@@ -335,7 +339,7 @@
 			<div class="visiting">
 				<h4>Организуем ваш приезд бесплатно!</h4>
 				<ol>
-					<li class="tickets"><div class="arrow_gray first"><img src="images/arrow_gray.png" alt=""></div><span>Подберем и</span><span>закажем билеты</span></li>
+					<li class="tickets"><div class="arrow_gray first"><img src="images/arrow_gray.png" alt=""></div><span>Подберем и </span><span>закажем билеты</span></li>
 					<li class="booking"><div class="arrow_gray second"><img src="images/arrow_gray.png" alt=""></div><span>Забронируем</span> <span>номер в гостинице</span></li>
 					<li class="transfer"><div class="arrow_gray third"><img src="images/arrow_gray.png" alt=""></div><span>Встретим, организуем</span> <span>трансфер</span></li>
 					<li class="guide"><div class="arrow_gray fourth"><img src="images/arrow_gray.png" alt=""></div><span>Проведем экскурсию</span> <span> по городу</span></li>
@@ -375,7 +379,7 @@
 	</section>
 
 	<div id="top"></div>
-	
+
 <script src="script/plugins-scroll.js"></script>
 <script>
 // Skroll-page
