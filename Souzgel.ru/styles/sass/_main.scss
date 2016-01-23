@@ -1,12 +1,90 @@
 /*GENERAL*/
 
-.mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content{
-  background-color:#4BB5CB !important;
-  max-width:460px !important; 
-}
+
+//POPUPS
+
+.photo{
+      width: 160px !important;
+      display: inline-block;
+    }
+
+    .description{
+      width: 460px;
+      float: right;
+      h3{
+        font-size: 24px;
+        font-family: "RobotoBold";
+        font-weight:300;
+        color:#285C8C;
+        text-align: left;
+        padding: 20px;
+      }
+      span{
+        padding-left:20px;
+        font-size: 18px;
+        color:#75C6D8;
+        font-family: "RobotoRegular";
+        padding-left:40px 20px 0 20px;
+        padding-bottom:40px;
+      }
+      p{
+        font-size: 18px;
+        font-family: "RobotoRegular";
+        padding:0 0 10px 20px;
+      }
+      .blue_p{
+        font-size: 18px;
+        font-family: "RobotoBold";
+        font-weight:300;
+        color:#285C8C;
+        padding:0 0 0 20px;
+      }
+     }
+
+    .form{
+      width: 460px;
+      height: 209px;
+      float: right;
+      background-color:#4BB5CB;
+      margin-top: -5px;
+    }
+
+    #team_form{
+      max-width: 620px !important;
+      margin:0 auto !important;
+      background-color:#fff !important;
+      padding-bottom: 204px;
+      form{
+          input{
+            display: block;
+            width: 320px;
+            margin:0 auto;
+            border-radius:5px;
+            height: 53px;
+            outline: none;
+            border:none;
+            margin-top: 9px;
+            font-size: 24px;
+            font-family: "RobotoRegular";
+          }
+          input[type="submit"]{
+            background-color:#FFFCCC;
+            font-size: 20px;
+            font-family: "RobotoBold";
+            margin-top: 11px;
+            font-weight: 300px;
+          }
+      }
+    }
+
+
 
 #test-form{
-  padding-bottom:60px;
+  padding:60px 0 60px 0;
+  background-color:#75C6D8 !important;
+  width: 460px;
+  margin:0 auto;
+
   h1{
   font-size: 32px;
   font-family: "RobotoBold";
@@ -43,6 +121,8 @@
 
 }
 
+
+//POPUPS
 
 .container{
   max-width: 940px;
@@ -94,7 +174,6 @@ h3{
     position:absolute;
     width: 50px;
     height: 50px;
-    background-color:red;
     background:url(../../images/arrow_form.png) no-repeat 50% 50%;
     right: 140px;
     top: 161px;
@@ -949,7 +1028,10 @@ header{
       padding-top: 40px;
       line-height: 34px;
       color:#23598F;
-    }
+    } 
+
+
+
     button{
       width: 320px;
       margin: 0 auto;
