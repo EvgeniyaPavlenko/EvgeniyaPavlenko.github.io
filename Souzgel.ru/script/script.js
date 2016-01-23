@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
-//SLIDER
-
+//SLIDER 
 var labels = ["50м", "100м", "200м", "500м", "1км", "1.5км"]
 
   $("#slider").slider({
@@ -27,8 +26,8 @@ var labels = ["50м", "100м", "200м", "500м", "1км", "1.5км"]
   $("#v1").text(labels[2]);
   $("#v2").text(labels[4]);
 
-  //POPUP
 
+  //POPUP SERTIFICATES
 $('.image-popup-vertical-fit').magnificPopup({
     type: 'image',
     closeOnContentClick: true,
@@ -58,11 +57,10 @@ $('.image-popup-vertical-fit').magnificPopup({
       duration: 300 // don't foget to change the duration also in CSS
     }
   });
-});
 
-$(document).ready(function() {
- 
-  $("#owl-demo").owlCarousel({
+  //OWL GALLERY_COMMENTS
+
+   $("#owl-demo").owlCarousel({
  
       navigation : true, // Show next and prev buttons
       slideSpeed : 300,
@@ -72,20 +70,24 @@ $(document).ready(function() {
       mouseDrag : true,
       touchDrag : true,
  
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
- 
   });
 
-  var owl = $("#owl-demo").data('owlCarousel');
-  $("#owl-demo:before").click(function(){ alert("before") })
+  //OWL GALLERY_POPUP
+  $("#owl-demo_popup").owlCarousel({
+   
+        navigation : true, // Show next and prev buttons
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true,
+        dragBeforeAnimFinish : true,
+        mouseDrag : true,
+        touchDrag : true,
+   
+    });
 
-  $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
+//SCROLL NAVIGATION
 
+$('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
    $("a.active_a").click(function () { 
       var elementClick = $(this).attr("href");
       var destination = $(elementClick).offset().top;
@@ -93,7 +95,8 @@ $(document).ready(function() {
       return false;
     });
 
-var top_show = 150; // the position of the scroll bar to display a button
+   //TOP BUTTON
+   var top_show = 150; // the position of the scroll bar to display a button
   var delay = 1000; // scroll delay
   $(document).ready(function() {
     $(window).scroll(function () { // If you fall into this scrolling function
@@ -108,13 +111,10 @@ var top_show = 150; // the position of the scroll bar to display a button
       }, delay);
     });
   });
- 
-});
 
 //POPUP FORM
 
-$(document).ready(function() {
-  $('.popup-with-form').magnificPopup({
+$('.popup-with-form').magnificPopup({
     type: 'inline',
     preloader: false,
     focus: '#name',
@@ -132,6 +132,3 @@ $(document).ready(function() {
     }
   });
 });
-
-
-
