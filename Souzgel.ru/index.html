@@ -345,7 +345,20 @@
 					<li class="guide"><div class="arrow_gray fourth"><img src="images/arrow_gray.png" alt=""></div><span>Проведем экскурсию</span> <span> по городу</span></li>
 					<li class="flat"><div class="arrow_gray fifth"><img src="images/arrow_orange.png" alt=""></div><span>Поможем выбрать</span> <span> квартиру</span></li>
 				</ol>
-				<div class="button"><button>Организуйте мой приезд</button></div>
+
+				<!-- link that opens popup -->
+				<a class="popup-with-form" href="#test-form"><div class="button"><button>Организуйте мой приезд</button></div></a>
+
+				<!-- form itself -->
+				<form id="test-form" class="white-popup-block mfp-hide">
+					<h1>ОСТАВЬТЕ КОНТАКТЫ</h1>
+					<fieldset style="border:0;">
+						<p>Мы позвоним, выясним детали и организуем Ваш приезд бесплатно!</p>
+						<input id="name" name="name" type="text" placeholder="Ваше имя" required="">
+						<input id="phone" name="phone" type="tel" placeholder="Номер телефона" required="">
+						<input type="submit" value="Получить варианты квартир" class="submit">
+					</fieldset>
+				</form>
 			</div>
 		</div>
 	</section>

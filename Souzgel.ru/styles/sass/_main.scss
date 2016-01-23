@@ -1,4 +1,49 @@
 /*GENERAL*/
+
+.mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content{
+  background-color:#4BB5CB !important;
+  max-width:460px !important; 
+}
+
+#test-form{
+  padding-bottom:60px;
+  h1{
+  font-size: 32px;
+  font-family: "RobotoBold";
+  text-align: center;
+  font-weight: 300px;
+  color:#FFFCCC;
+  }
+  p{
+    width: 298px !important;
+    color:#fff !important;
+    font-size: 24px !important;
+    margin:0 auto !important;
+  }
+
+  input{
+      display: block;
+      width: 320px;
+      margin:0 auto;
+      border-radius:5px;
+      height: 53px;
+      outline: none;
+      border:none;
+      margin-top: 9px;
+      font-size: 24px;
+      font-family: "RobotoRegular";
+    }
+    input[type="submit"]{
+      background-color:#FFFCCC;
+      font-size: 20px;
+      font-family: "RobotoBold";
+      margin-top: 11px;
+      font-weight: 300px;
+    }
+
+}
+
+
 .container{
   max-width: 940px;
   margin:0 auto;
@@ -1021,6 +1066,7 @@ header{
   .visit{
     width: 100%;
     padding-bottom:76px;
+    position:relative;
     h4{
       font-size: 32px;
       font-family: "RobotoBold";
@@ -1038,6 +1084,8 @@ header{
       background-color:#fff;
       margin-top: 29px;
       padding-bottom: 45px;
+
+
       h4{
         display: block;
         font-size: 28px;
