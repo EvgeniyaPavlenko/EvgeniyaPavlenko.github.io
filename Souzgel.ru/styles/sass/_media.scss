@@ -142,6 +142,7 @@
 	/*POPULAR*/
 	.popular{
 		clear: both;
+
 		h3{
 			font-size: 24px;
 			padding-top:34px;
@@ -380,6 +381,12 @@
 			    margin: 0 auto;
 			    text-align: center;
 			}
+			
+		.owl-prev, 
+		.owl-next{
+			display: none !important;
+		}
+
 		}
 
 	/*/COMMENTS*/
