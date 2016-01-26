@@ -12,28 +12,29 @@
     font-weight: 300;
     color: #285C8C;
     text-align: left;
-    padding: 20px; }
+    padding: 18px 20px 0 20px; }
   .description span {
     padding-left: 20px;
     font-size: 18px;
     color: #75C6D8;
     font-family: "RobotoRegular";
-    padding-left: 40px 20px 0 20px;
-    padding-bottom: 40px; }
+    padding: 0 20px 0 20px;
+    display: block;
+    margin-top: -7px; }
   .description p {
     font-size: 18px;
     font-family: "RobotoRegular";
-    padding: 0 0 10px 20px; }
+    padding: 5px 48px 10px 20px; }
   .description .blue_p {
     font-size: 18px;
     font-family: "RobotoBold";
     font-weight: 300;
     color: #285C8C;
-    padding: 0 0 0 20px; }
+    padding: 8px 0 0 20px; }
 
 .form {
   width: 460px;
-  height: 209px;
+  height: 235px;
   float: right;
   background-color: #4BB5CB;
   margin-top: -5px; }
@@ -42,16 +43,16 @@
   max-width: 620px !important;
   margin: 0 auto !important;
   background-color: #fff !important;
-  padding-bottom: 204px; }
+  padding-bottom: 230px; }
   #team_form form input {
     display: block;
     width: 320px;
-    margin: 0 auto;
+    margin-left: 9px;
     border-radius: 5px;
     height: 53px;
     outline: none;
     border: none;
-    margin-top: 9px;
+    margin-top: 13px;
     font-size: 24px;
     font-family: "RobotoRegular"; }
   #team_form form input[type="submit"] {
@@ -59,47 +60,48 @@
     font-size: 20px;
     font-family: "RobotoBold";
     margin-top: 11px;
-    font-weight: 300px; }
+    font-weight: 300px;
+    text-align: center; }
 
-#popular_popup {
+.popular_popup {
   max-width: 940px !important;
   background-color: #fff !important;
   margin: 0 auto;
   padding-bottom: 50px; }
-  #popular_popup .pop_gallery {
+  .popular_popup .pop_gallery {
     width: 560px;
     height: 493px;
     display: inline-block; }
-    #popular_popup .pop_gallery #owl-demo_popup {
+    .popular_popup .pop_gallery #owl-demo_popup {
       width: 100%; }
-      #popular_popup .pop_gallery #owl-demo_popup .item img {
+      .popular_popup .pop_gallery #owl-demo_popup .item img {
         height: 409px !important; }
-    #popular_popup .pop_gallery h3 {
+    .popular_popup .pop_gallery h3 {
       color: #285C8C;
       text-align: left !important;
       padding: 20px 0 20px 20px; }
-  #popular_popup .pop_form {
+  .popular_popup .pop_form {
     width: 380px;
     height: 493px;
     float: right;
     background-color: #4BB5CB; }
-    #popular_popup .pop_form h1 {
+    .popular_popup .pop_form h1 {
       font-size: 30px;
       font-family: "RobotoBold";
       text-align: center;
       font-weight: 300px;
       color: #FFFCCC; }
-    #popular_popup .pop_form p {
+    .popular_popup .pop_form p {
       width: 298px !important;
       color: #fff !important;
       font-size: 24px !important;
       margin: 0 auto !important; }
-    #popular_popup .pop_form .name {
+    .popular_popup .pop_form .name {
       font-size: 24px;
       font-family: "RobotoBold";
       font-weight: 300px;
       color: #FFFCCC; }
-    #popular_popup .pop_form input {
+    .popular_popup .pop_form input {
       display: block;
       width: 320px;
       margin: 0 auto;
@@ -110,24 +112,24 @@
       margin-top: 9px;
       font-size: 24px;
       font-family: "RobotoRegular"; }
-    #popular_popup .pop_form input[type="submit"] {
+    .popular_popup .pop_form input[type="submit"] {
       background-color: #FFFCCC;
       font-size: 20px;
       font-family: "RobotoBold";
       margin-top: 11px;
       font-weight: 300px; }
-  #popular_popup .pop_description {
+  .popular_popup .pop_description {
     display: inline-block;
     width: 560px; }
-    #popular_popup .pop_description p {
+    .popular_popup .pop_description p {
       font-size: 18px;
       font-family: "RobotoRegular";
       padding-left: 20px; }
-      #popular_popup .pop_description p span {
+      .popular_popup .pop_description p span {
         font-family: "RobotoBold"; }
-    #popular_popup .pop_description .general {
+    .popular_popup .pop_description .general {
       padding: 20px 0 20px 20px; }
-  #popular_popup .pop_map {
+  .popular_popup .pop_map {
     width: 380px;
     height: 438px;
     background-color: white;
@@ -166,6 +168,19 @@
     font-family: "RobotoBold";
     margin-top: 11px;
     font-weight: 300px; }
+
+.sync1 .item img {
+  width: 100% !important; }
+
+.sync2 div {
+  margin-right: 30px; }
+.sync2 .item {
+  width: 50px !important;
+  height: 50px;
+  margin-left: 20px; }
+  .sync2 .item img {
+    width: 50px !important;
+    height: 50px; }
 
 .container {
   max-width: 940px;
@@ -515,6 +530,8 @@ header {
         padding: 24px 0 22px 0;
         line-height: 5px;
         border-radius: 5px; }
+  .popular .owl-buttons {
+    display: none !important; }
 
 /*/POPULAR*/
 /*CHOOSE_APARTAMENTS*/
@@ -837,6 +854,8 @@ header {
     max-width: 820px !important;
     margin: 0 auto;
     position: relative; }
+    .comments .owl-carousel #sync1 .item {
+      width: 100% !important; }
   .comments .owl-buttons {
     background-image: url(../../images/arrow-gallary.png) !important;
     background-repeat: no-repeat;
@@ -949,6 +968,8 @@ header {
       width: 600px;
       float: right;
       padding-top: 31px; }
+    .team .team_member.odd .form {
+      background-color: red !important; }
   .team .team_member.even {
     width: 100%;
     padding-bottom: 60px;
@@ -962,11 +983,6 @@ header {
       width: 600px;
       display: inline-block;
       padding-top: 31px; }
-  .team #sync1_popup {
-    width: 550px; }
-  .team #sync2_popup .item {
-    width: 40px;
-    height: 40px; }
 
 /*/TEAM*/
 /*CHIEF*/

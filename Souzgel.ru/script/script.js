@@ -58,19 +58,6 @@ $('.image-popup-vertical-fit').magnificPopup({
     }
   });
 
-  // //OWL GALLERY_COMMENTS
-
-  //  $("#owl-demo").owlCarousel({
- 
-  //     navigation : true, // Show next and prev buttons
-  //     slideSpeed : 300,
-  //     paginationSpeed : 400,
-  //     singleItem:true,
-  //     dragBeforeAnimFinish : true,
-  //     mouseDrag : true,
-  //     touchDrag : true,
- 
-  // });
 
   //OWL GALLERY_POPUP
   $("#owl-demo_popup").owlCarousel({
@@ -195,8 +182,8 @@ $(document).ready(function() {
 
 $(document).ready(function() {
  
-  var sync1 = $("#sync1_popup");
-  var sync2 = $("#sync2_popup");
+  var sync1 = $(".sync1");
+  var sync2 = $(".sync2");
  
   sync1.owlCarousel({
     singleItem : true,
@@ -222,17 +209,17 @@ $(document).ready(function() {
  
   function syncPosition(el){
     var current = this.currentItem;
-    $("#sync2_popup")
+    $(".sync2")
       .find(".owl-item")
       .removeClass("synced")
       .eq(current)
       .addClass("synced")
-    if($("#sync2").data("owlCarousel") !== undefined){
+    if($(".sync2").data("owlCarousel") !== undefined){
       center(current)
     }
   }
  
-  $("#sync2_popup").on("click", ".owl-item", function(e){
+  $(".sync2").on("click", ".owl-item", function(e){
     e.preventDefault();
     var number = $(this).data("owlItem");
     sync1.trigger("owl.goTo",number);
