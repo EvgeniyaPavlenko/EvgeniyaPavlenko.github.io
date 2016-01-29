@@ -1,8 +1,6 @@
 $(document).ready(function(){
 
-   $('.scroll-pane').jScrollPane();
-
-//SLIDER 
+//SLIDER
 var labels = ["50м", "100м", "200м", "500м", "1км", "1.5км"]
 
   $("#slider").slider({
@@ -31,7 +29,7 @@ var labels = ["50м", "100м", "200м", "500м", "1км", "1.5км"]
 
   //OWL GALLERY_POPUP
   $("#owl-demo_popup").owlCarousel({
-   
+
         navigation : true, // Show next and prev buttons
         slideSpeed : 300,
         paginationSpeed : 400,
@@ -39,13 +37,13 @@ var labels = ["50м", "100м", "200м", "500м", "1км", "1.5км"]
         dragBeforeAnimFinish : true,
         mouseDrag : true,
         touchDrag : true,
-   
+
     });
 
 //SCROLL NAVIGATION
 
 $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
-   $("a.active_a").click(function () { 
+   $("a.active_a").click(function () {
       var elementClick = $(this).attr("href");
       var destination = $(elementClick).offset().top;
       $('html,body,section').animate( { scrollTop: destination }, 1100 );
@@ -68,13 +66,18 @@ $('.popup-with-form').magnificPopup({
         } else {
           this.st.focus = '#name';
         }
+      },
+      open: function(){
+        $('.scroll-pane').jScrollPane({
+          contentWidth: '0px',
+        });
       }
     }
   });
- 
+
   var sync1 = $("#sync1");
   var sync2 = $("#sync2");
- 
+
   sync1.owlCarousel({
     singleItem : true,
     slideSpeed : 1000,
@@ -83,7 +86,7 @@ $('.popup-with-form').magnificPopup({
     afterAction : syncPosition,
     responsiveRefreshRate : 200,
   });
- 
+
   sync2.owlCarousel({
     items : 4,
     itemsDesktop      : [820,10],
@@ -96,7 +99,7 @@ $('.popup-with-form').magnificPopup({
       el.find(".owl-item").eq(0).addClass("synced");
     }
   });
- 
+
   function syncPosition(el){
     var current = this.currentItem;
     $("#sync2")
@@ -108,13 +111,13 @@ $('.popup-with-form').magnificPopup({
       center(current)
     }
   }
- 
+
   $("#sync2").on("click", ".owl-item", function(e){
     e.preventDefault();
     var number = $(this).data("owlItem");
     sync1.trigger("owl.goTo",number);
   });
- 
+
   function center(number){
     var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
     var num = number;
@@ -124,7 +127,7 @@ $('.popup-with-form').magnificPopup({
         var found = true;
       }
     }
- 
+
     if(found===false){
       if(num>sync2visible[sync2visible.length-1]){
         sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -139,13 +142,13 @@ $('.popup-with-form').magnificPopup({
     } else if(num === sync2visible[0]){
       sync2.trigger("owl.goTo", num-1)
     }
-    
+
   }
 
   //OWL POP_UP
   var sync1 = $(".sync1_popup");
   var sync2 = $(".sync2_popup");
- 
+
   sync1.owlCarousel({
     singleItem : true,
     slideSpeed : 1000,
@@ -154,7 +157,7 @@ $('.popup-with-form').magnificPopup({
     afterAction : syncPosition,
     responsiveRefreshRate : 200,
   });
- 
+
   sync2.owlCarousel({
     items : 5,
     itemsDesktop      : [480,5],
@@ -179,13 +182,13 @@ $('.popup-with-form').magnificPopup({
       center(current)
     }
   }
- 
+
   $(".sync2_popup").on("click", ".owl-item", function(e){
     e.preventDefault();
     var number = $(this).data("owlItem");
     sync1.trigger("owl.goTo",number);
   });
- 
+
   function center(number){
     var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
     var num = number;
@@ -195,7 +198,7 @@ $('.popup-with-form').magnificPopup({
         var found = true;
       }
     }
- 
+
     if(found===false){
       if(num>sync2visible[sync2visible.length-1]){
         sync2.trigger("owl.goTo", num - sync2visible.length+2)

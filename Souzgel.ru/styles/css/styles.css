@@ -1,4 +1,3 @@
-/*GENERAL*/
 .photo {
   width: 160px !important;
   display: inline-block; }
@@ -81,10 +80,12 @@
   .popular_popup .popup_columns {
     display: inline-block;
     vertical-align: top; }
+  .popular_popup .scroll-pane {
+    overflow-y: auto;
+    overflow-x: hidden; }
   .popular_popup .left_column {
     width: 560px;
-    height: 934px;
-    overflow: auto; }
+    height: 934px; }
     .popular_popup .left_column .owl-carousel {
       margin-bottom: -11px; }
     .popular_popup .left_column .sync1_popup .item img {
@@ -92,7 +93,7 @@
     .popular_popup .left_column .sync2_popup {
       position: relative; }
       .popular_popup .left_column .sync2_popup .owl-item {
-        width: 55px !important;
+        width: 57px !important;
         margin-right: 42px; }
         .popular_popup .left_column .sync2_popup .owl-item:not(.synced):before {
           content: "";
@@ -104,7 +105,7 @@
           z-index: 20;
           top: 0px; }
       .popular_popup .left_column .sync2_popup .owl-wrapper {
-        margin-left: 33px; }
+        margin-left: 28px; }
       .popular_popup .left_column .sync2_popup .item img {
         height: 63px;
         width: 96px;
@@ -120,10 +121,10 @@
       bottom: -67px; }
     .popular_popup .left_column .owl-buttons .owl-prev {
       position: absolute;
-      left: 1px;
+      left: -5px;
       z-index: 999; }
     .popular_popup .left_column .owl-buttons .owl-next {
-      right: -1px;
+      right: -9px;
       position: absolute;
       z-index: 999; }
     .popular_popup .left_column .pop_gallery h3 {

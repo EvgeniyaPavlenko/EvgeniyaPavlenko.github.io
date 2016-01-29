@@ -1,6 +1,3 @@
-/*GENERAL*/
-
-
 //POPUPS TEAM
 
 .photo{
@@ -98,10 +95,14 @@
     display: inline-block;
     vertical-align: top;
   }
+  .scroll-pane{
+    overflow-y:auto;
+    overflow-x: hidden;
+  }
   .left_column{
     width: 560px;
     height: 934px;
-    overflow: auto;
+   
 //POP_GALLERY
     .owl-carousel{
             margin-bottom: -11px;
@@ -116,7 +117,7 @@
     .sync2_popup{
       position:relative;
       .owl-item{
-        width: 55px !important;
+        width: 57px !important;
         margin-right: 42px;
          &:not(.synced):before{
             content: "";
@@ -130,7 +131,7 @@
           }
       }
       .owl-wrapper{
-        margin-left: 33px;
+        margin-left: 28px;
       }
       .item{
         img{
@@ -157,11 +158,11 @@
       }
       .owl-prev{
       position: absolute;
-      left: 1px;
+      left: -5px;
       z-index: 999;
       }
       .owl-next{
-      right: -1px;
+      right:-9px;
       position: absolute;
       z-index: 999;
       }
