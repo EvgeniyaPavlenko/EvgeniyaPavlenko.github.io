@@ -209,4 +209,5 @@ $('.popup-with-form').magnificPopup({
       sync2.trigger("owl.goTo", num-1)
     }
   }
+
 });

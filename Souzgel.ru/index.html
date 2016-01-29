@@ -11,6 +11,7 @@
       <link rel="stylesheet" href="styles/css/owl.carousel.css">
       <!-- Default Theme -->
       <link rel="stylesheet" href="styles/css/owl.theme.css">
+      <link rel="stylesheet" href="styles/css/jquery.jscrollpane.css">
       <link rel="stylesheet" href="styles/css/styles.css">
    </head>
    <body>
@@ -98,7 +99,7 @@
                   </div>
                   <a class="popup-with-form" href="#popular_popup_1"><button value="посмотреть планировки">посмотреть планировки</button></a>
                   <div class="white-popup-block mfp-hide popular_popup" id="popular_popup_1">
-                     <div class="left_column popup_columns">
+                     <div class="left_column popup_columns scroll-pane">
                         <div class="pop_gallery">
                            <h3>ЖК АКВАТОРИЯ</h3>
                            <div class="sync1_popup" class="owl-carousel">
@@ -583,6 +584,10 @@
             </div>
          </div>
       </section>
+      <script src="script/jquery.mousewheel.js"></script>
+      <script src="script/jscrollpane.min.js"></script>
+      <script src="script/mwheelIntent.js"></script>
+
       <script src="script/plugins-scroll.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
@@ -591,5 +596,13 @@
       <script src="script/parallax.js"></script>
       <script src="script/parallax/min.js"></script>
       <script src="script/script.js"></script>
+
+      <script>
+      $(function()
+      {
+         $('.scroll-pane').jScrollPane();
+      });
+      
+      </script>
    </body>
 </html>

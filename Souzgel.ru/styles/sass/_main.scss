@@ -88,7 +88,7 @@
   .left_column{
     width: 560px;
     height: 934px;
-    overflow-y: scroll;
+    overflow: auto;
 //POP_GALLERY
     .sync1_popup{
       .item{

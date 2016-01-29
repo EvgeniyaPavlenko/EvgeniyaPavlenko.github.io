@@ -73,7 +73,7 @@
   .popular_popup .left_column {
     width: 560px;
     height: 934px;
-    overflow-y: scroll; }
+    overflow: auto; }
     .popular_popup .left_column .sync1_popup .item img {
       width: 560px;
       height: 361px; }
