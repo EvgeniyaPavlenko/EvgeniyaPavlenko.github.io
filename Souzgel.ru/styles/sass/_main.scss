@@ -52,6 +52,11 @@
       margin:0 auto !important;
       background-color:#fff !important;
       padding-bottom: 230px;
+      position:relative;
+      .mfp-close{
+        color:RGB(75, 181, 203);
+        font-size: 68px;
+      }
       form{
           input{
             display: block;
@@ -81,6 +86,14 @@
   max-width: 940px !important;
   background-color:#fff !important;
   margin:0 auto;
+  position:relative;
+  .mfp-close{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    font-size: 78px;
+    color: #fff;
+  }
   .popup_columns{
     display: inline-block;
     vertical-align: top;
@@ -90,52 +103,79 @@
     height: 934px;
     overflow: auto;
 //POP_GALLERY
+    .owl-carousel{
+            margin-bottom: -11px;
+          }
     .sync1_popup{
       .item{
         img{
-          width: 560px;
-          height: 361px;
+          height: 427px;
         }
       }
     }
     .sync2_popup{
       position:relative;
       .owl-item{
-        width: 66px !important;
-        margin-left: 30px;
+        width: 55px !important;
+        margin-right: 42px;
+         &:not(.synced):before{
+            content: "";
+            width: 96px;
+            height: 63px;
+            background-color:rgba(34,34,34, .7);
+            display: block;
+            position: absolute;
+            z-index: 20;
+            top: 0px;
+          }
+      }
+      .owl-wrapper{
+        margin-left: 33px;
       }
       .item{
         img{
-        height: 52px;
+        height: 63px;
+        width: 96px;
+        position:relative;
+        z-index: 10;
         }
       }
     }
 
     .owl-controls{
-      position: absolute;
-      bottom: -58px;
-      z-index: 100;
+ 
     }
     .owl-buttons{
       div{
         border-radius:0;
-        height: 54px;
         background-color:#23598F;
         font-size: 32px;
         width: 26px;
-        line-height: 46px;
+        line-height: 58px;
+        height: 63px;
+        bottom: -67px
       }
       .owl-prev{
-        margin-right: 475px;
-        margin-left: 3px;
+      position: absolute;
+      left: 1px;
+      z-index: 999;
+      }
+      .owl-next{
+      right: -1px;
+      position: absolute;
+      z-index: 999;
       }
     }
     .pop_gallery{
       h3{
-        font-size: 24px;
-        text-align:left;
-        color:#23598F;
-        padding: 13px 0 8px 18px;
+      font-size: 24px;
+      text-align: left;
+      color: #23598F;
+      padding: 13px 0 8px 18px;
+      position: fixed;
+      z-index: 100;
+      width: 560PX;
+      background-color: #fff;
       }
     }
 
@@ -145,18 +185,19 @@
   .pop_description{
       display: inline-block;
       width: 512px;
-      padding-top: 13px;
+      padding-top: 24px;
       padding-bottom: 36px;
       p{
         font-size: 18px;
         font-family: "RobotoRegular";
         padding-left:20px;
+        line-height: 22px;
          span{
           font-family: "RobotoBold";
          }
       }
       .general{
-        padding:20px 0 20px 20px;
+        padding:20px 0 1px 20px;
       }
     }
 
@@ -220,17 +261,22 @@
 
 //TEST FORM
 #test-form{
-  padding:60px 0 60px 0;
+  padding:50px 0 57px 0;
   background-color:#75C6D8 !important;
   width: 460px;
   margin:0 auto;
-
+  position:relative;
+  .mfp-close {
+      color: #fff;
+      font-size: 68px;
+  }
   h1{
-  font-size: 32px;
+  font-size: 30px;
   font-family: "RobotoBold";
   text-align: center;
   font-weight: 300px;
   color:#FFFCCC;
+  line-height: 10px;
   }
   p{
     width: 298px !important;
@@ -250,6 +296,9 @@
       margin-top: 9px;
       font-size: 24px;
       font-family: "RobotoRegular";
+    }
+    #name_visit{
+      margin-top: 40px;
     }
     input[type="submit"]{
       background-color:#FFFCCC;
@@ -1046,7 +1095,8 @@ header{
   .owl-carousel{
     max-width: 820px !important;
     margin:0 auto;
-     position:relative;
+    position:relative;
+    padding-top:54px;
      #sync1{
       .item{
           width: 100% !important;
