@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+   $('.scroll-pane').jScrollPane();
+
 //SLIDER 
 var labels = ["50м", "100м", "200м", "500м", "1км", "1.5км"]
 
@@ -209,5 +211,4 @@ $('.popup-with-form').magnificPopup({
       sync2.trigger("owl.goTo", num-1)
     }
   }
-
 });
