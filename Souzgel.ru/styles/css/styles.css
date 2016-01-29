@@ -66,74 +66,101 @@
 .popular_popup {
   max-width: 940px !important;
   background-color: #fff !important;
-  margin: 0 auto;
-  padding-bottom: 50px; }
-  .popular_popup .pop_gallery {
-    width: 560px;
-    height: 493px;
-    display: inline-block; }
-    .popular_popup .pop_gallery #owl-demo_popup {
-      width: 100%; }
-      .popular_popup .pop_gallery #owl-demo_popup .item img {
-        height: 409px !important; }
-    .popular_popup .pop_gallery h3 {
-      color: #285C8C;
-      text-align: left !important;
-      padding: 20px 0 20px 20px; }
-  .popular_popup .pop_form {
-    width: 380px;
-    height: 493px;
-    float: right;
-    background-color: #4BB5CB; }
-    .popular_popup .pop_form h1 {
-      font-size: 30px;
-      font-family: "RobotoBold";
-      text-align: center;
-      font-weight: 300px;
-      color: #FFFCCC; }
-    .popular_popup .pop_form p {
-      width: 298px !important;
-      color: #fff !important;
-      font-size: 24px !important;
-      margin: 0 auto !important; }
-    .popular_popup .pop_form .name {
-      font-size: 24px;
-      font-family: "RobotoBold";
-      font-weight: 300px;
-      color: #FFFCCC; }
-    .popular_popup .pop_form input {
-      display: block;
-      width: 320px;
-      margin: 0 auto;
-      border-radius: 5px;
-      height: 53px;
-      outline: none;
-      border: none;
-      margin-top: 9px;
-      font-size: 24px;
-      font-family: "RobotoRegular"; }
-    .popular_popup .pop_form input[type="submit"] {
-      background-color: #FFFCCC;
-      font-size: 20px;
-      font-family: "RobotoBold";
-      margin-top: 11px;
-      font-weight: 300px; }
-  .popular_popup .pop_description {
+  margin: 0 auto; }
+  .popular_popup .popup_columns {
     display: inline-block;
-    width: 560px; }
-    .popular_popup .pop_description p {
-      font-size: 18px;
-      font-family: "RobotoRegular";
-      padding-left: 20px; }
-      .popular_popup .pop_description p span {
-        font-family: "RobotoBold"; }
-    .popular_popup .pop_description .general {
-      padding: 20px 0 20px 20px; }
-  .popular_popup .pop_map {
+    vertical-align: top; }
+  .popular_popup .left_column {
+    width: 560px;
+    height: 934px;
+    overflow-y: scroll; }
+    .popular_popup .left_column .sync1_popup .item img {
+      width: 560px;
+      height: 361px; }
+    .popular_popup .left_column .sync2_popup {
+      position: relative; }
+      .popular_popup .left_column .sync2_popup .owl-item {
+        width: 66px !important;
+        margin-left: 30px; }
+      .popular_popup .left_column .sync2_popup .item img {
+        height: 52px; }
+    .popular_popup .left_column .owl-controls {
+      position: absolute;
+      bottom: -58px;
+      z-index: 100; }
+    .popular_popup .left_column .owl-buttons div {
+      border-radius: 0;
+      height: 54px;
+      background-color: #23598F;
+      font-size: 32px;
+      width: 26px;
+      line-height: 46px; }
+    .popular_popup .left_column .owl-buttons .owl-prev {
+      margin-right: 475px;
+      margin-left: 3px; }
+    .popular_popup .left_column .pop_gallery h3 {
+      font-size: 24px;
+      text-align: left;
+      color: #23598F;
+      padding: 13px 0 8px 18px; }
+    .popular_popup .left_column .pop_description {
+      display: inline-block;
+      width: 512px;
+      padding-top: 13px;
+      padding-bottom: 36px; }
+      .popular_popup .left_column .pop_description p {
+        font-size: 18px;
+        font-family: "RobotoRegular";
+        padding-left: 20px; }
+        .popular_popup .left_column .pop_description p span {
+          font-family: "RobotoBold"; }
+      .popular_popup .left_column .pop_description .general {
+        padding: 20px 0 20px 20px; }
+  .popular_popup .right_column {
     width: 380px;
-    height: 438px;
-    background-color: white;
-    float: right; }
+    height: 300px; }
+    .popular_popup .right_column form {
+      width: 381px; }
+    .popular_popup .right_column .pop_form {
+      height: 462px;
+      background-color: #4BB5CB; }
+      .popular_popup .right_column .pop_form h1 {
+        font-size: 30px;
+        font-family: "RobotoBold";
+        text-align: center;
+        font-weight: 300px;
+        color: #FFFCCC;
+        padding-top: 24px;
+        margin-bottom: 0; }
+      .popular_popup .right_column .pop_form p {
+        color: #fff !important;
+        font-size: 24px !important;
+        margin: 0 auto !important; }
+      .popular_popup .right_column .pop_form .name {
+        font-size: 24px;
+        font-family: "RobotoBold";
+        font-weight: 300px;
+        color: #FFFCCC; }
+      .popular_popup .right_column .pop_form input {
+        display: block;
+        width: 320px;
+        margin: 0 auto;
+        border-radius: 5px;
+        height: 53px;
+        outline: none;
+        border: none;
+        margin-top: 9px;
+        font-size: 24px;
+        font-family: "RobotoRegular"; }
+      .popular_popup .right_column .pop_form input[type="submit"] {
+        background-color: #FFFCCC;
+        font-size: 20px;
+        font-family: "RobotoBold";
+        margin-top: 11px;
+        font-weight: 300px; }
+    .popular_popup .right_column .map_popup {
+      width: 379px;
+      height: 435px; }
 
 #test-form {
   padding: 60px 0 60px 0;
@@ -169,19 +196,7 @@
     margin-top: 11px;
     font-weight: 300px; }
 
-.sync1 .item img {
-  width: 100% !important; }
-
-.sync2 div {
-  margin-right: 30px; }
-.sync2 .item {
-  width: 50px !important;
-  height: 50px;
-  margin-left: 20px; }
-  .sync2 .item img {
-    width: 50px !important;
-    height: 50px; }
-
+/*/TEST_FORM*/
 .container {
   max-width: 940px;
   margin: 0 auto; }
@@ -767,25 +782,21 @@ header {
     float: right;
     margin-top: 85px;
     position: relative; }
-    .sertificates .container .sertificates_right .mfp-no-margins img.mfp-img {
-      padding: 0; }
-    .sertificates .container .sertificates_right .mfp-no-margins .mfp-figure:after {
-      top: 0;
-      bottom: 0; }
-    .sertificates .container .sertificates_right .mfp-no-margins .mfp-container {
-      padding: 0; }
-    .sertificates .container .sertificates_right img {
-      width: 140px;
-      display: inline-block;
-      vertical-align: top;
-      margin-right: 10px;
-      margin-bottom: 21px;
-      cursor: pointer; }
+    .sertificates .container .sertificates_right .zero {
+      font-size: 500px;
+      font-family: RobotoBold;
+      color: #4BB5CB;
+      line-height: .7;
+      display: block;
+      margin-left: -32px;
+      text-align: left; }
+      .sertificates .container .sertificates_right .zero .percent {
+        font-size: 257px; }
     .sertificates .container .sertificates_right p {
-      font-size: 16px;
-      font-family: "RobotoRegular";
-      text-align: center;
-      line-height: 20px; }
+      color: #4BB5CB;
+      font-size: 45px;
+      padding-top: 50px;
+      line-height: 33px; }
 
 /*/SERTIFICATES*/
 /*MAP*/

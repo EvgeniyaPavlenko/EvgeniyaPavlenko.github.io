@@ -81,30 +81,94 @@
   max-width: 940px !important;
   background-color:#fff !important;
   margin:0 auto;
-  padding-bottom:50px;
-
-    .pop_gallery{
-      width: 560px;
-      height: 493px;
-      display: inline-block;
-      #owl-demo_popup{
-        width: 100%;
-        .item{
-          img{
-            height: 409px !important;
-          }
+  .popup_columns{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .left_column{
+    width: 560px;
+    height: 934px;
+    overflow-y: scroll;
+//POP_GALLERY
+    .sync1_popup{
+      .item{
+        img{
+          width: 560px;
+          height: 361px;
         }
       }
-      h3{
-         color:#285C8C;
-         text-align: left !important;
-        padding: 20px 0 20px 20px;
+    }
+    .sync2_popup{
+      position:relative;
+      .owl-item{
+        width: 66px !important;
+        margin-left: 30px;
+      }
+      .item{
+        img{
+        height: 52px;
+        }
       }
     }
+
+    .owl-controls{
+      position: absolute;
+      bottom: -58px;
+      z-index: 100;
+    }
+    .owl-buttons{
+      div{
+        border-radius:0;
+        height: 54px;
+        background-color:#23598F;
+        font-size: 32px;
+        width: 26px;
+        line-height: 46px;
+      }
+      .owl-prev{
+        margin-right: 475px;
+        margin-left: 3px;
+      }
+    }
+    .pop_gallery{
+      h3{
+        font-size: 24px;
+        text-align:left;
+        color:#23598F;
+        padding: 13px 0 8px 18px;
+      }
+    }
+
+//END_POP_GALLERY
+
+//DESCRIPTION
+  .pop_description{
+      display: inline-block;
+      width: 512px;
+      padding-top: 13px;
+      padding-bottom: 36px;
+      p{
+        font-size: 18px;
+        font-family: "RobotoRegular";
+        padding-left:20px;
+         span{
+          font-family: "RobotoBold";
+         }
+      }
+      .general{
+        padding:20px 0 20px 20px;
+      }
+    }
+
+  }
+  .right_column{
+    width: 380px;
+    height: 300px;
+    form{
+      width: 381px;
+    }
     .pop_form{
-      width: 380px;
-      height: 493px;
-      float: right;
+      height: 462px;
       background-color:#4BB5CB;
        h1{
         font-size: 30px;
@@ -112,9 +176,10 @@
         text-align: center;
         font-weight: 300px;
         color:#FFFCCC;
+        padding-top: 24px;
+        margin-bottom: 0;
         }
         p{
-          width: 298px !important;
           color:#fff !important;
           font-size: 24px !important;
           margin:0 auto !important;
@@ -125,7 +190,6 @@
           font-weight: 300px;
           color:#FFFCCC;
         }
-
       input{
             display: block;
             width: 320px;
@@ -146,31 +210,15 @@
             font-weight: 300px;
         }
     }
-    .pop_description{
-      display: inline-block;
-      width: 560px;
-      p{
-        font-size: 18px;
-        font-family: "RobotoRegular";
-        padding-left:20px;
-         span{
-          font-family: "RobotoBold";
-         }
-      }
-      .general{
-        padding:20px 0 20px 20px;
-      }
+    .map_popup{
+      width: 379px;
+      height: 435px;
     }
-
-    .pop_map{
-      width: 380px;
-      height: 438px;
-      background-color: white;
-      float: right;
-    }
+  }
 }
 
 
+//TEST FORM
 #test-form{
   padding:60px 0 60px 0;
   background-color:#75C6D8 !important;
@@ -212,27 +260,8 @@
     }
 
 }
-.sync1{
-  .item{
-      img{
-        width: 100% !important;
-      }
-  }
-}
-.sync2{
-  div{
-    margin-right: 30px;
-  }
-  .item{
-    width: 50px !important;
-    height: 50px;
-    margin-left:20px;
-    img{
-      width: 50px !important;
-    height: 50px;
-    }
-  }
-}
+/*/TEST_FORM*/
+
 //GENERAL
 .container{
   max-width: 940px;
@@ -921,29 +950,23 @@ header{
       float: right;
       margin-top: 85px;
       position:relative;
-      .mfp-no-margins img.mfp-img {
-        padding: 0;
-      }
-      .mfp-no-margins .mfp-figure:after {
-        top: 0;
-        bottom: 0;
-      }
-      .mfp-no-margins .mfp-container {
-        padding: 0;
-      }
-      img{
-        width: 140px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 10px;
-        margin-bottom: 21px;
-        cursor: pointer;
+      .zero{
+        font-size: 500px;
+        font-family: RobotoBold;
+        color: #4BB5CB;
+        line-height: .7;
+        display: block;
+        margin-left: -32px;
+        text-align: left;
+        .percent{
+          font-size: 257px;
+        }
       }
       p{
-        font-size: 16px;
-        font-family: "RobotoRegular";
-        text-align: center;
-        line-height: 20px;
+        color: #4BB5CB;
+        font-size: 45px;
+        padding-top: 50px;
+        line-height: 33px;
       }
     }
   }

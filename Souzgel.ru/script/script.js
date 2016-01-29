@@ -27,38 +27,6 @@ var labels = ["50м", "100м", "200м", "500м", "1км", "1.5км"]
   $("#v2").text(labels[4]);
 
 
-  //POPUP SERTIFICATES
-$('.image-popup-vertical-fit').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    mainClass: 'mfp-img-mobile',
-    image: {
-      verticalFit: true
-    }
-  });
-  $('.image-popup-fit-width').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    image: {
-      verticalFit: false
-    }
-  });
-  $('.image-popup-no-margins').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    closeBtnInside: false,
-    fixedContentPos: true,
-    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-    image: {
-      verticalFit: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300 // don't foget to change the duration also in CSS
-    }
-  });
-
-
   //OWL GALLERY_POPUP
   $("#owl-demo_popup").owlCarousel({
    
@@ -101,12 +69,6 @@ $('.popup-with-form').magnificPopup({
       }
     }
   });
-
-
-//OWL NEW
-});
-
-$(document).ready(function() {
  
   var sync1 = $("#sync1");
   var sync2 = $("#sync2");
@@ -121,9 +83,9 @@ $(document).ready(function() {
   });
  
   sync2.owlCarousel({
-    items : 15,
-    itemsDesktop      : [1199,10],
-    itemsDesktopSmall     : [979,10],
+    items : 4,
+    itemsDesktop      : [820,10],
+    itemsDesktopSmall     : [820,10],
     itemsTablet       : [768,8],
     itemsMobile       : [479,4],
     pagination:false,
@@ -177,13 +139,10 @@ $(document).ready(function() {
     }
     
   }
- 
-});
 
-$(document).ready(function() {
- 
-  var sync1 = $(".sync1");
-  var sync2 = $(".sync2");
+  //OWL POP_UP
+  var sync1 = $(".sync1_popup");
+  var sync2 = $(".sync2_popup");
  
   sync1.owlCarousel({
     singleItem : true,
@@ -195,21 +154,21 @@ $(document).ready(function() {
   });
  
   sync2.owlCarousel({
-    items : 15,
-    itemsDesktop      : [1199,10],
-    itemsDesktopSmall     : [979,10],
-    itemsTablet       : [768,8],
-    itemsMobile       : [479,4],
+    items : 5,
+    itemsDesktop      : [480,5],
+    itemsDesktopSmall     : [480,5],
+    itemsTablet       : [480,5],
+    itemsMobile       : [480,5],
     pagination:false,
     responsiveRefreshRate : 100,
     afterInit : function(el){
       el.find(".owl-item").eq(0).addClass("synced");
     }
-  });
- 
+  })
+
   function syncPosition(el){
     var current = this.currentItem;
-    $(".sync2")
+    $(".sync2_popup")
       .find(".owl-item")
       .removeClass("synced")
       .eq(current)
@@ -219,7 +178,7 @@ $(document).ready(function() {
     }
   }
  
-  $(".sync2").on("click", ".owl-item", function(e){
+  $(".sync2_popup").on("click", ".owl-item", function(e){
     e.preventDefault();
     var number = $(this).data("owlItem");
     sync1.trigger("owl.goTo",number);
@@ -249,7 +208,5 @@ $(document).ready(function() {
     } else if(num === sync2visible[0]){
       sync2.trigger("owl.goTo", num-1)
     }
-    
   }
- 
 });

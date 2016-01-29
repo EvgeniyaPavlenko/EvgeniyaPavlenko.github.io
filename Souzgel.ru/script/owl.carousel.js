@@ -1469,7 +1469,7 @@ if (typeof Object.create !== "function") {
         stopOnHover : false,
 
         navigation : false,
-        navigationText : ["prev", "next"],
+        navigationText : ["&#8249;", "&#8250;"],
         rewindNav : true,
         scrollPerPage : false,
 
