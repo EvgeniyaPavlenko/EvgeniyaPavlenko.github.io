@@ -159,11 +159,11 @@ $('.popup-with-form').magnificPopup({
   });
 
   sync2.owlCarousel({
-    items : 5,
-    itemsDesktop      : [480,5],
-    itemsDesktopSmall     : [480,5],
-    itemsTablet       : [480,5],
-    itemsMobile       : [480,5],
+    items : 40,
+    itemsDesktop      : [280,5],
+    itemsDesktopSmall     : [280,5],
+    itemsTablet       : [280,5],
+    itemsMobile       : [280,5],
     pagination:false,
     responsiveRefreshRate : 100,
     afterInit : function(el){

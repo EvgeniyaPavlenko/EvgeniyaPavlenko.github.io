@@ -105,7 +105,8 @@
           z-index: 20;
           top: 0px; }
       .popular_popup .left_column .sync2_popup .owl-wrapper {
-        margin-left: 28px; }
+        margin-left: 28px;
+        width: 500px !important; }
       .popular_popup .left_column .sync2_popup .item img {
         height: 63px;
         width: 96px;
@@ -506,7 +507,6 @@ header {
         margin-right: 0; }
       .popular .popular_container .popular_item .item_img {
         width: 100%;
-        height: 257px;
         margin-bottom: 31px;
         overflow: hidden; }
       .popular .popular_container .popular_item h3 {
