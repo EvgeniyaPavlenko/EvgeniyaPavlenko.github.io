@@ -159,7 +159,7 @@ $('.popup-with-form').magnificPopup({
   });
 
   sync2.owlCarousel({
-    items : 40,
+    items : 5,
     itemsDesktop      : [280,5],
     itemsDesktopSmall     : [280,5],
     itemsTablet       : [280,5],

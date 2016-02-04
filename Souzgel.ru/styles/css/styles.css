@@ -38,16 +38,28 @@
   background-color: #4BB5CB;
   margin-top: -5px; }
 
-#team_form {
+#team_form_1,
+#team_form_2,
+#team_form_3,
+#team_form_4,
+#team_form_5 {
   max-width: 620px !important;
   margin: 0 auto !important;
   background-color: #fff !important;
   padding-bottom: 230px;
   position: relative; }
-  #team_form .mfp-close {
+  #team_form_1 .mfp-close,
+  #team_form_2 .mfp-close,
+  #team_form_3 .mfp-close,
+  #team_form_4 .mfp-close,
+  #team_form_5 .mfp-close {
     color: RGB(75, 181, 203);
     font-size: 68px; }
-  #team_form form input {
+  #team_form_1 form input,
+  #team_form_2 form input,
+  #team_form_3 form input,
+  #team_form_4 form input,
+  #team_form_5 form input {
     display: block;
     width: 320px;
     margin-left: 9px;
@@ -58,7 +70,11 @@
     margin-top: 13px;
     font-size: 24px;
     font-family: "RobotoRegular"; }
-  #team_form form input[type="submit"] {
+  #team_form_1 form input[type="submit"],
+  #team_form_2 form input[type="submit"],
+  #team_form_3 form input[type="submit"],
+  #team_form_4 form input[type="submit"],
+  #team_form_5 form input[type="submit"] {
     background-color: #FFFCCC;
     font-size: 20px;
     font-family: "RobotoBold";
@@ -1011,7 +1027,8 @@ header {
   .team .team_member.odd {
     width: 100%;
     padding-bottom: 60px;
-    border-bottom: 2px dashed #CCCCCC; }
+    border-bottom: 2px dashed #CCCCCC;
+    border-top: 2px dashed #CCCCCC; }
     .team .team_member.odd div {
       vertical-align: top; }
     .team .team_member.odd .txt {
@@ -1023,6 +1040,8 @@ header {
       padding-top: 31px; }
     .team .team_member.odd .form {
       background-color: red !important; }
+  .team .violetta {
+    padding-bottom: 160px !important; }
   .team .team_member.even {
     width: 100%;
     padding-bottom: 60px;

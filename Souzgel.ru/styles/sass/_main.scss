@@ -44,7 +44,11 @@
       background-color:#4BB5CB;
       margin-top: -5px;
     }
-    #team_form{
+    #team_form_1,
+    #team_form_2,
+    #team_form_3,
+    #team_form_4,
+    #team_form_5{
       max-width: 620px !important;
       margin:0 auto !important;
       background-color:#fff !important;
@@ -1230,6 +1234,7 @@ header{
     width: 100%;
     padding-bottom:60px;
     border-bottom:2px dashed #CCCCCC;
+    border-top:2px dashed #CCCCCC;
     div{
       vertical-align: top;
     }
@@ -1245,6 +1250,9 @@ header{
     .form{
       background-color:red !important;
     }
+  }
+  .violetta{
+    padding-bottom:160px !important;
   }
    .team_member.even{
     width: 100%;
