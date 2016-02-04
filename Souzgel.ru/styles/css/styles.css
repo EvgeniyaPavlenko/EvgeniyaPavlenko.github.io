@@ -122,7 +122,7 @@
       z-index: 100;
       width: 543px;
       background-color: #fff;
-      z-index: 999; }
+      z-index: 9999; }
     .popular_popup .left_column .sync1 {
       margin-top: 57px; }
     .popular_popup .left_column .sync1 .item {
@@ -1018,10 +1018,11 @@ header {
     padding-top: 68px;
     font-weight: 300px; }
   .comments .sync2 .item {
-    position: relative; }
+    position: relative;
+    margin-right: 6px; }
     .comments .sync2 .item:not(.synced):before {
       content: "";
-      width: 100%;
+      width: 102%;
       height: 100%;
       background-color: rgba(34, 34, 34, 0.7);
       display: block;

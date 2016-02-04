@@ -130,7 +130,7 @@
       z-index: 100;
       width: 543px;
       background-color: #fff;
-      z-index: 999;
+      z-index: 9999;
     }
    
 //POP_GALLERY
@@ -1216,9 +1216,10 @@ header{
   .sync2{
     .item{
       position:relative;
+      margin-right:6px;
       &:not(.synced):before{
         content:"";
-        width: 100%;
+        width: 102%;
         height:100%;
         background-color:rgba(34,34,34, .7);
         display: block;
