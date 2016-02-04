@@ -1,3 +1,14 @@
+
+//SLIDER
+.jspVerticalBar{
+  left:0 !important;
+  width: 11px;
+  
+}
+.jspDrag{
+  background-color:#ccc;
+}
+
 //POPUPS TEAM
 
 .photo{
@@ -91,9 +102,13 @@
   .mfp-close{
     position: absolute;
     right: 1px;
-    top: 1px;
-    font-size: 78px;
-    color: #fff;
+    top: 15px;
+    color: transparent;
+    font-size: 68px;
+    width: 44px;
+    height: 44px;
+    background:url(../../images/x.png) no-repeat;
+    font-size: contain;
   }
   .popup_columns{
     display: inline-block;
@@ -106,51 +121,71 @@
   .left_column{
     width: 560px;
     height: 934px;
+    h3{
+      font-size: 24px;
+      text-align: left;
+      color: #23598F;
+      padding: 13px 0 8px 18px;
+      position: fixed;
+      z-index: 100;
+      width: 543px;
+      background-color: #fff;
+    }
    
 //POP_GALLERY
-    .owl-carousel{
-            margin-bottom: -11px;
-          }
-    .sync1_popup{
-      .item{
-        img{
-          height: 427px;
-        }
-      }
+  .sync1{
+    margin-top: 57px;
+  }
+  .sync1 .item{
+  height: 368px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.sync2{
+  width: 91%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.sync2 .item{
+    margin-left: 1px;
+    margin-right: 2px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    height: 75px;
+    position:relative;
+    &:not(.synced):before{
+      content: "";
+      width: 96px;
+      height: 63px;
+      background-color:rgba(34,34,34, .7);
+      display: block;
+      position: absolute;
+      z-index: 20;
+      top: 0px;
     }
-    .sync2_popup{
-      position:relative;
-      .owl-item{
-        width: 57px !important;
-        margin-right: 42px;
-         &:not(.synced):before{
-            content: "";
-            width: 96px;
-            height: 63px;
-            background-color:rgba(34,34,34, .7);
-            display: block;
-            position: absolute;
-            z-index: 20;
-            top: 0px;
-          }
-      }
-      .owl-wrapper{
-        margin-left: 28px;
-        width:500px !important;
-      }
-      .item{
-        img{
-        height: 63px;
-        width: 96px;
-        position:relative;
-        z-index: 10;
-        }
-      }
-    }
+}
+  .sync2 .item h1{
+    font-size: 18px;
+  }
+  .sync2 .synced .item{
+   &:before{
+    display: none;
+   }
 
-    .owl-controls{
- 
-    }
+  }
+
+  .sync2 .item img{
+    height: 63px;
+    width: 100%;
+  }
+
     .owl-buttons{
       div{
         border-radius:0;
@@ -165,23 +200,13 @@
       position: absolute;
       left: -5px;
       z-index: 999;
+      bottom: -78px;
       }
       .owl-next{
       right:-9px;
       position: absolute;
       z-index: 999;
-      }
-    }
-    .pop_gallery{
-      h3{
-      font-size: 24px;
-      text-align: left;
-      color: #23598F;
-      padding: 13px 0 8px 18px;
-      position: fixed;
-      z-index: 100;
-      width: 560PX;
-      background-color: #fff;
+      bottom: -78px;
       }
     }
 
@@ -230,6 +255,7 @@
           color:#fff !important;
           font-size: 24px !important;
           margin:0 auto !important;
+          padding-left: 20px !important;
         }
         .name{
           font-size: 24px;
@@ -273,8 +299,13 @@
   margin:0 auto;
   position:relative;
   .mfp-close {
-      color: #fff;
-      font-size: 68px;
+    color: transparent;
+    font-size: 68px;
+    width: 44px;
+    height: 44px;
+    background:url(../../images/x.png) no-repeat;
+    font-size: contain;
+    top:15px;
   }
   h1{
   font-size: 30px;
@@ -678,7 +709,7 @@ header{
           position:absolute;
           left:-55px;
           background:url(../../images/icon-sea.png) no-repeat 50% 50%;
-          background-size:cover;
+          background-size:contain;
         }
         .room_2:before{
           content:" ";
@@ -687,7 +718,7 @@ header{
           position:absolute;
           left:-54px;
           background:url(../../images/icon-3room.png) no-repeat 50% 50%;
-          background-size:cover;
+          background-size:contain;
         }
         .room_3:before{
           content:" ";
@@ -696,7 +727,7 @@ header{
           position:absolute;
           left:-55px;
           background:url(../../images/icon-2room.png) no-repeat 50% 50%;
-          background-size:cover;
+          background-size:contain;
         }
         .price:before{
           content:" ";
@@ -705,7 +736,7 @@ header{
           position:absolute;
           left:-54px;
           background:url(../../images/icon-price.png) no-repeat 50% 50%;
-          background-size:cover;
+          background-size:contain;
         }
       }
      button{
@@ -828,7 +859,7 @@ header{
           label {
             position: absolute;
             width: 20px;
-            margin-left: -10px;
+            margin-left: -16px;
             text-align: center;
             margin-top: 20px;
             font-size: 18px;
@@ -1103,13 +1134,12 @@ header{
     margin:0 auto;
     position:relative;
     padding-top:54px;
-     #sync1{
+     .sync1{
       .item{
           width: 100% !important;
+        }
       }
-     }
-  }
-
+    }
   .owl-buttons{
     background-image:url(../../images/arrow-gallary.png) !important;
     background-repeat:no-repeat;
@@ -1123,7 +1153,7 @@ header{
     background-image:url(../../images/arrow-gallary.png) !important;
     background-repeat:no-repeat  !important;
     background-color:transparent !important;
-    top: 188px;
+    top: 253px;
     left: -38px !important;
     height: 100px;
     }
@@ -1135,7 +1165,7 @@ header{
      background-image:url(../../images/arrow-gallary_copy.png) !important;
      background-repeat:no-repeat  !important;
      background-color:transparent !important;
-     top: 188px;
+     top: 253px;
      height: 100px;
      right:-38px !important;
     }
@@ -1160,6 +1190,25 @@ header{
     text-align: center;
     padding-top:68px;
     font-weight: 300px;
+  }
+  .sync2{
+    .item{
+      position:relative;
+      &:not(.synced):before{
+        content:"";
+        width: 100%;
+        height:100%;
+        background-color:rgba(34,34,34, .7);
+        display: block;
+        position:absolute;
+      }
+    }
+  }
+
+  .synced {
+   &:before{
+      display: none;
+    }
   }
 }
 /*/COMMENTS*/
@@ -1246,9 +1295,6 @@ header{
       width: 600px;
       float: right;
       padding-top: 31px;
-    }
-    .form{
-      background-color:red !important;
     }
   }
   .violetta{

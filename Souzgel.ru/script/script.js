@@ -18,7 +18,7 @@ var labels = ["50м", "100м", "200м", "500м", "1км", "1.5км"]
   // Space out values
   for (var i = 0; i < labels.length; i++) {
 
-    var el = $('<label>' + (labels[i]) + '</label>').css('left', (i / labels.length * 115) + '%');
+    var el = $('<label>' + (labels[i]) + '</label>').css('left', (i / labels.length * 120) + '%');
 
     $("#slider").append(el);
 
@@ -26,19 +26,6 @@ var labels = ["50м", "100м", "200м", "500м", "1км", "1.5км"]
   $("#v1").text(labels[2]);
   $("#v2").text(labels[4]);
 
-
-  //OWL GALLERY_POPUP
-  $("#owl-demo_popup").owlCarousel({
-
-        navigation : true, // Show next and prev buttons
-        slideSpeed : 300,
-        paginationSpeed : 400,
-        singleItem:true,
-        dragBeforeAnimFinish : true,
-        mouseDrag : true,
-        touchDrag : true,
-
-    });
 
 //SCROLL NAVIGATION
 
@@ -74,10 +61,13 @@ $('.popup-with-form').magnificPopup({
       }
     }
   });
+});
 
-  var sync1 = $("#sync1");
-  var sync2 = $("#sync2");
-
+$(document).ready(function() {
+ 
+  var sync1 = $(".sync1");
+  var sync2 = $(".sync2");
+ 
   sync1.owlCarousel({
     singleItem : true,
     slideSpeed : 1000,
@@ -86,94 +76,23 @@ $('.popup-with-form').magnificPopup({
     afterAction : syncPosition,
     responsiveRefreshRate : 200,
   });
-
-  sync2.owlCarousel({
-    items : 4,
-    itemsDesktop      : [820,10],
-    itemsDesktopSmall     : [820,10],
-    itemsTablet       : [768,8],
-    itemsMobile       : [479,4],
-    pagination:false,
-    responsiveRefreshRate : 100,
-    afterInit : function(el){
-      el.find(".owl-item").eq(0).addClass("synced");
-    }
-  });
-
-  function syncPosition(el){
-    var current = this.currentItem;
-    $("#sync2")
-      .find(".owl-item")
-      .removeClass("synced")
-      .eq(current)
-      .addClass("synced")
-    if($("#sync2").data("owlCarousel") !== undefined){
-      center(current)
-    }
-  }
-
-  $("#sync2").on("click", ".owl-item", function(e){
-    e.preventDefault();
-    var number = $(this).data("owlItem");
-    sync1.trigger("owl.goTo",number);
-  });
-
-  function center(number){
-    var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
-    var num = number;
-    var found = false;
-    for(var i in sync2visible){
-      if(num === sync2visible[i]){
-        var found = true;
-      }
-    }
-
-    if(found===false){
-      if(num>sync2visible[sync2visible.length-1]){
-        sync2.trigger("owl.goTo", num - sync2visible.length+2)
-      }else{
-        if(num - 1 === -1){
-          num = 0;
-        }
-        sync2.trigger("owl.goTo", num);
-      }
-    } else if(num === sync2visible[sync2visible.length-1]){
-      sync2.trigger("owl.goTo", sync2visible[1])
-    } else if(num === sync2visible[0]){
-      sync2.trigger("owl.goTo", num-1)
-    }
-
-  }
-
-  //OWL POP_UP
-  var sync1 = $(".sync1_popup");
-  var sync2 = $(".sync2_popup");
-
-  sync1.owlCarousel({
-    singleItem : true,
-    slideSpeed : 1000,
-    navigation: true,
-    pagination:false,
-    afterAction : syncPosition,
-    responsiveRefreshRate : 200,
-  });
-
+ 
   sync2.owlCarousel({
     items : 5,
-    itemsDesktop      : [280,5],
-    itemsDesktopSmall     : [280,5],
-    itemsTablet       : [280,5],
-    itemsMobile       : [280,5],
+    itemsDesktop      : [1199,5],
+    itemsDesktopSmall     : [979,5],
+    itemsTablet       : [768,5],
+    itemsMobile       : [479,5],
     pagination:false,
     responsiveRefreshRate : 100,
     afterInit : function(el){
       el.find(".owl-item").eq(0).addClass("synced");
     }
-  })
-
+  });
+ 
   function syncPosition(el){
     var current = this.currentItem;
-    $(".sync2_popup")
+    $(".sync2")
       .find(".owl-item")
       .removeClass("synced")
       .eq(current)
@@ -182,13 +101,13 @@ $('.popup-with-form').magnificPopup({
       center(current)
     }
   }
-
-  $(".sync2_popup").on("click", ".owl-item", function(e){
+ 
+  $(".sync2").on("click", ".owl-item", function(e){
     e.preventDefault();
     var number = $(this).data("owlItem");
     sync1.trigger("owl.goTo",number);
   });
-
+ 
   function center(number){
     var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
     var num = number;
@@ -198,7 +117,7 @@ $('.popup-with-form').magnificPopup({
         var found = true;
       }
     }
-
+ 
     if(found===false){
       if(num>sync2visible[sync2visible.length-1]){
         sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -213,5 +132,7 @@ $('.popup-with-form').magnificPopup({
     } else if(num === sync2visible[0]){
       sync2.trigger("owl.goTo", num-1)
     }
+    
   }
+ 
 });
