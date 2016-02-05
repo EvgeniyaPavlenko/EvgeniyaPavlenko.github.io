@@ -18,7 +18,7 @@ var labels = ["50м", "100м", "200м", "500м", "1км", "1.5км"]
   // Space out values
   for (var i = 0; i < labels.length; i++) {
 
-    var el = $('<label>' + (labels[i]) + '</label>').css('left', (i / labels.length * 115) + '%');
+    var el = $('<label>' + (labels[i]) + '</label>').css('left', (i / labels.length * 120) + '%');
 
     $("#slider").append(el);
 

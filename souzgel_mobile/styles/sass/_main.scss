@@ -281,7 +281,7 @@ header{
           height: 43px;
           position:absolute;
           left:-59px;
-          background:url(../../images/icon-3room.png) no-repeat 50% 50%;
+          background:url(../../images/icon-2room.png) no-repeat 50% 50%;
           background-size:cover;
         }
         .room_3:before{
@@ -290,7 +290,7 @@ header{
           height: 43px;
           position:absolute;
           left:-55px;
-          background:url(../../images/icon-2room.png) no-repeat 50% 50%;
+          background:url(../../images/icon-1room.png) no-repeat 50% 50%;
           background-size:cover;
         }
         .price:before{
@@ -302,8 +302,69 @@ header{
           background:url(../../images/icon-price.png) no-repeat 50% 50%;
           background-size:cover;
         }
-
       }
+      .akvatoria, .solnechnui{
+          .room_3:before{
+          content:" ";
+          width: 43px;
+          height: 43px;
+          position:absolute;
+          left:-55px;
+          background:url(../../images/icon-2room.png) no-repeat 50% 50%;
+          background-size:contain;
+          }
+          .room_2:before{
+          content:" ";
+          width: 43px;
+          height: 43px;
+          position:absolute;
+          left:-61px;
+          background:url(../../images/icon-3room.png) no-repeat 50% 50%;
+          background-size:contain;
+          }
+        }
+
+        .riviera, .sozvezdie{
+          .room_3:before{
+          content:" ";
+          width: 43px;
+          height: 43px;
+          position:absolute;
+          left:-56px;
+          background:url(../../images/icon-1room.png) no-repeat 50% 50%;
+          background-size:contain;
+          }
+          .room_2:before{
+          content:" ";
+          width: 43px;
+          height: 43px;
+          position:absolute;
+          left:-61px;
+          background:url(../../images/icon-3room.png) no-repeat 50% 50%;
+          background-size:contain;
+          }
+        }
+        .primorskui{
+          .room_2:before{
+          content:" ";
+          width: 43px;
+          height: 43px;
+          position:absolute;
+          left:-60px;
+          background:url(../../images/icon-3room.png) no-repeat 50% 50%;
+          background-size:contain;
+          }
+          .room_3:before{
+          content:" ";
+          width: 43px;
+          height: 43px;
+          position:absolute;
+          left:-54px;
+          background:url(../../images/icon-2room.png) no-repeat 50% 50%;
+          background-size:contain;
+          }
+        }
+
      button{
         clear: both;
         width: 260px;
@@ -432,7 +493,7 @@ header{
           label {
             position: absolute;
             width: 20px;
-            margin-left: -10px;
+            margin-left: -16px !important;
             text-align: center;
             margin-top: 20px;
             font-size: 14px;
