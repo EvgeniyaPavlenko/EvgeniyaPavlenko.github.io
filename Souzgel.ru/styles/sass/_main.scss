@@ -1156,7 +1156,7 @@ header{
     margin:0 auto;
     position:relative;
     padding-top:54px;
-     .sync1{
+     .sync3{
       .item{
           width: 100% !important;
         }
@@ -1213,7 +1213,7 @@ header{
     padding-top:68px;
     font-weight: 300px;
   }
-  .sync2{
+  .sync4{
     .item{
       position:relative;
       margin-right:6px;
@@ -1227,11 +1227,11 @@ header{
       }
     }
   }
-
-  .synced {
+  .sync4 .synced .item{
    &:before{
-      display: none;
-    }
+    display: none;
+   }
+
   }
 }
 /*/COMMENTS*/

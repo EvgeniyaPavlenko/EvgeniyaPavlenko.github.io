@@ -973,7 +973,7 @@ header {
     margin: 0 auto;
     position: relative;
     padding-top: 54px; }
-    .comments .owl-carousel .sync1 .item {
+    .comments .owl-carousel .sync3 .item {
       width: 100% !important; }
   .comments .owl-buttons {
     background-image: url(../../images/arrow-gallary.png) !important;
@@ -1017,17 +1017,17 @@ header {
     text-align: center;
     padding-top: 68px;
     font-weight: 300px; }
-  .comments .sync2 .item {
+  .comments .sync4 .item {
     position: relative;
     margin-right: 6px; }
-    .comments .sync2 .item:not(.synced):before {
+    .comments .sync4 .item:not(.synced):before {
       content: "";
       width: 102%;
       height: 100%;
       background-color: rgba(34, 34, 34, 0.7);
       display: block;
       position: absolute; }
-  .comments .synced:before {
+  .comments .sync4 .synced .item:before {
     display: none; }
 
 /*/COMMENTS*/

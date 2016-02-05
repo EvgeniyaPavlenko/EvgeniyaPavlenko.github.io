@@ -61,9 +61,6 @@ $('.popup-with-form').magnificPopup({
       }
     }
   });
-});
-
-$(document).ready(function() {
  
   var sync1 = $(".sync1");
   var sync2 = $(".sync2");
@@ -92,11 +89,7 @@ $(document).ready(function() {
  
   function syncPosition(el){
     var current = this.currentItem;
-    $(".sync2")
-      .find(".owl-item")
-      .removeClass("synced")
-      .eq(current)
-      .addClass("synced")
+    $(".sync2").find(".owl-item").removeClass("synced").eq(current).addClass("synced")
     if($(".sync2").data("owlCarousel") !== undefined){
       center(current)
     }
@@ -132,7 +125,76 @@ $(document).ready(function() {
     } else if(num === sync2visible[0]){
       sync2.trigger("owl.goTo", num-1)
     }
-    
+  }
+
+
+
+  // Big carousel
+
+  var sync3 = $(".sync3");
+  var sync4 = $(".sync4");
+ 
+  sync3.owlCarousel({
+    singleItem : true,
+    slideSpeed : 1000,
+    navigation: true,
+    pagination:false,
+    afterAction : syncPosition2,
+    responsiveRefreshRate : 200,
+  });
+ 
+  sync4.owlCarousel({
+    items : 5,
+    itemsDesktop      : [1199,5],
+    itemsDesktopSmall     : [979,5],
+    itemsTablet       : [768,5],
+    itemsMobile       : [479,5],
+    pagination:false,
+    responsiveRefreshRate : 100,
+    afterInit : function(el){
+      el.find(".owl-item").eq(0).addClass("synced");
+    }
+  });
+ 
+  function syncPosition2(el){
+    var current = this.currentItem;
+    sync4.find(".owl-item").removeClass("synced").eq(current).addClass("synced")
+    if(sync4.data("owlCarousel") !== undefined){
+      center2(current)
+    }
   }
  
+  sync4.on("click", ".owl-item", function(e){
+    e.preventDefault();
+    var number = $(this).data("owlItem");
+    sync3.trigger("owl.goTo",number);
+  });
+ 
+  function center2(number){
+    var sync2visible = sync4.data("owlCarousel").owl.visibleItems;
+    var num = number;
+    var found = false;
+    for(var i in sync2visible){
+      if(num === sync2visible[i]){
+        var found = true;
+      }
+    }
+ 
+    if(found===false){
+      if(num>sync2visible[sync2visible.length-1]){
+        sync4.trigger("owl.goTo", num - sync2visible.length+2)
+      }else{
+        if(num - 1 === -1){
+          num = 0;
+        }
+        sync4.trigger("owl.goTo", num);
+      }
+    } else if(num === sync2visible[sync2visible.length-1]){
+      sync4.trigger("owl.goTo", sync2visible[1])
+    } else if(num === sync2visible[0]){
+      sync4.trigger("owl.goTo", num-1)
+    }
+    
+  }
+
 });
