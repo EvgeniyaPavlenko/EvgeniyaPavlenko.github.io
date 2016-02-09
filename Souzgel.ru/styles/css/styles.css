@@ -112,7 +112,7 @@
     overflow-x: hidden; }
   .popular_popup .left_column {
     width: 560px;
-    height: 934px; }
+    height: 760px; }
     .popular_popup .left_column h3 {
       font-size: 24px;
       text-align: left;
@@ -196,7 +196,8 @@
         padding: 20px 0 1px 20px; }
   .popular_popup .right_column {
     width: 380px;
-    height: 300px; }
+    height: 760px;
+    overflow: hidden; }
     .popular_popup .right_column form {
       width: 381px; }
     .popular_popup .right_column .pop_form {

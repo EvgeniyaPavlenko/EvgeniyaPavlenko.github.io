@@ -120,7 +120,7 @@
   }
   .left_column{
     width: 560px;
-    height: 934px;
+    height: 760px;
     h3{
       font-size: 24px;
       text-align: left;
@@ -235,7 +235,8 @@
   }
   .right_column{
     width: 380px;
-    height: 300px;
+    height: 760px;
+    overflow:hidden;
     form{
       width: 381px;
     }
