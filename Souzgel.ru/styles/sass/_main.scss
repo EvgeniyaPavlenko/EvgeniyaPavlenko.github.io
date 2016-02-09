@@ -127,8 +127,7 @@
       color: #23598F;
       padding: 13px 0 8px 18px;
       position: fixed;
-      z-index: 100;
-      width: 543px;
+      width: 545px;
       background-color: #fff;
       z-index: 9999;
     }
@@ -1176,7 +1175,7 @@ header{
     background-repeat:no-repeat  !important;
     background-color:transparent !important;
     top: 253px;
-    left: -38px !important;
+    left: -52px !important;
     height: 100px;
     }
      .owl-next{
@@ -1189,7 +1188,7 @@ header{
      background-color:transparent !important;
      top: 253px;
      height: 100px;
-     right:-38px !important;
+     right:-56px !important;
     }
 
     .owl-page span{
@@ -1219,11 +1218,14 @@ header{
       margin-right:6px;
       &:not(.synced):before{
         content:"";
-        width: 102%;
-        height:100%;
+        width: 99%;
+        height:97%;
         background-color:rgba(34,34,34, .7);
         display: block;
         position:absolute;
+      }
+      img{
+        width: 156px;
       }
     }
   }

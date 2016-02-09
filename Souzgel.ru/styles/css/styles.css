@@ -119,8 +119,7 @@
       color: #23598F;
       padding: 13px 0 8px 18px;
       position: fixed;
-      z-index: 100;
-      width: 543px;
+      width: 545px;
       background-color: #fff;
       z-index: 9999; }
     .popular_popup .left_column .sync1 {
@@ -988,7 +987,7 @@ header {
     background-repeat: no-repeat  !important;
     background-color: transparent !important;
     top: 253px;
-    left: -38px !important;
+    left: -52px !important;
     height: 100px; }
   .comments .owl-next {
     position: absolute;
@@ -1000,7 +999,7 @@ header {
     background-color: transparent !important;
     top: 253px;
     height: 100px;
-    right: -38px !important; }
+    right: -56px !important; }
   .comments .owl-page span {
     background-color: #285C8C !important; }
   .comments p {
@@ -1022,11 +1021,13 @@ header {
     margin-right: 6px; }
     .comments .sync4 .item:not(.synced):before {
       content: "";
-      width: 102%;
-      height: 100%;
+      width: 99%;
+      height: 97%;
       background-color: rgba(34, 34, 34, 0.7);
       display: block;
       position: absolute; }
+    .comments .sync4 .item img {
+      width: 156px; }
   .comments .sync4 .synced .item:before {
     display: none; }
 
