@@ -7,7 +7,6 @@ script/owl.carousel.js
 script/popup.js
 script/parallax.js
 script/parallax/min.js
-script/script.js
 styles/jquery-ui.css
 styles/css/popup.css
 styles/css/owl.carousel.css
