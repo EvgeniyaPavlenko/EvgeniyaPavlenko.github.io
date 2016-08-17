@@ -5,8 +5,6 @@ $(document).ready(function() {
 	$(".top_text p").animated("fadeInUp", "fadeOutDown");
 	$(".section_header").animated("fadeInUp", "fadeOutDown");
 
-	$(".animation_2").animated("fadeInLeft", "fadeOutLeft");
-	$(".animation_3").animated("fadeInRight", "fadeOutRight");
 	$(".animation_1").animated("flipInY", "flipOutY");
 
 
@@ -44,6 +42,12 @@ $(document).ready(function() {
 			$(".top_menu li a").addClass("fadeInUp animated");
 		}
 	});
+
+	$(".top_menu ul a").mPageScroll2id();
+
+	$('.about_img').equalHeights();
+	$('.about_h3').equalHeights();
+	$('.sign_h3').equalHeights();
 
 	$("input, select, textarea").not("[type=submit]").jqBootstrapValidation();
 });

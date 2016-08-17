@@ -85,9 +85,22 @@ section
 	color: $color
 
 form
-	input, 
-	textarea
+	input:focus, 
+	textarea:focus
 		border: 1px solid $color
+	input,
+	textarea
+		+kerning(2)
 	button
 		background-color: $color
 		+kerning(2)
+
+.form-group
+	color: $text_color
+	+kerning(2)
+
+.s_sign
+	.section_content
+		.col-md-4
+			span
+				color: $color

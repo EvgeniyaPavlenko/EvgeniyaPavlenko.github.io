@@ -68,11 +68,21 @@ section h3 {
 .contacts_icon, .text-danger {
   color: #FF6347; }
 
+form input:focus,
+form textarea:focus {
+  border: 1px solid #FF6347; }
 form input,
 form textarea {
-  border: 1px solid #FF6347; }
+  letter-spacing: 2px; }
 form button {
   background-color: #FF6347;
   letter-spacing: 2px; }
+
+.form-group {
+  color: #888;
+  letter-spacing: 2px; }
+
+.s_sign .section_content .col-md-4 span {
+  color: #FF6347; }
 
 /*# sourceMappingURL=tomato.css.map */
