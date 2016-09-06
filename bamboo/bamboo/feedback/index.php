@@ -28,6 +28,12 @@ $form['original'] = array(
 				'minlength' => '5',
 			),
 		),
+    'size-field' => array(
+      'title' => 'Размер',
+    ),
+    'color-field' => array(
+      'title' => 'Цвет',
+    ),
 	),
 	'cfg' => array(
 		'charset' => 'utf-8',
@@ -45,7 +51,14 @@ $form['original'] = array(
 		'tpl' => false,
 		'antispam' => 'email77',
 		'antispamjs' => 'address77',
-		'okay' => 'Дякуємо,<br/> Ваша заявка прийнята!<br/>',
+		'okay' => '<h2>Благодарим за заказ</h2>
+              <h3>В ближайшее время с вами свяжется менеджер</h3>
+              <h4>а пока давайте зафрендимся )</h4><ul>
+              <li><a href="https://www.facebook.com/ecogloves.org/?ref=bookmarks"><img src="img/fb.png"></a></li>
+              <li><a href="#"><img src="img/in.png"></a></li>
+              <li><a href="#"><img src="img/vk.png"></a></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLa1BfettIKBb-8X8TK9OyLofUvyyr28Ht"><img src="img/you.png"></a></li>
+            </ul>',
 		'fuck' => 'Ошибка отправки, позвоните нам пожалуйста',
 		'spam' => 'Cпам робот',
 		'notify' => 'color-modal',
@@ -69,6 +82,12 @@ $form['touch'] = array(
         'minlength' => '5',
       ),
     ),
+    'size-field' => array(
+      'title' => 'Размер',
+    ),
+    'color-field' => array(
+      'title' => 'Цвет',
+    ),
   ),
   'cfg' => array(
     'charset' => 'utf-8',
@@ -86,7 +105,14 @@ $form['touch'] = array(
     'tpl' => false,
     'antispam' => 'email77',
     'antispamjs' => 'address77',
-    'okay' => 'Дякуємо,<br/> Ваша заявка прийнята!<br/>',
+    'okay' => '<h2>Благодарим за заказ</h2>
+              <h3>В ближайшее время с вами свяжется менеджер</h3>
+              <h4>а пока давайте зафрендимся )</h4><ul>
+              <li><a href="https://www.facebook.com/ecogloves.org/?ref=bookmarks"><img src="img/fb.png"></a></li>
+              <li><a href="#"><img src="img/in.png"></a></li>
+              <li><a href="#"><img src="img/vk.png"></a></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLa1BfettIKBb-8X8TK9OyLofUvyyr28Ht"><img src="img/you.png"></a></li>
+            </ul>',
     'fuck' => 'Ошибка отправки, позвоните нам пожалуйста',
     'spam' => 'Cпам робот',
     'notify' => 'color-modal',
@@ -110,6 +136,12 @@ $form['antifrozen'] = array(
         'minlength' => '5',
       ),
     ),
+    'size-field' => array(
+      'title' => 'Размер',
+    ),
+    'color-field' => array(
+      'title' => 'Цвет',
+    ),
   ),
   'cfg' => array(
     'charset' => 'utf-8',
@@ -127,7 +159,14 @@ $form['antifrozen'] = array(
     'tpl' => false,
     'antispam' => 'email77',
     'antispamjs' => 'address77',
-    'okay' => 'Дякуємо,<br/> Ваша заявка прийнята!<br/>',
+    'okay' => '<h2>Благодарим за заказ</h2>
+              <h3>В ближайшее время с вами свяжется менеджер</h3>
+              <h4>а пока давайте зафрендимся )</h4><ul>
+              <li><a href="https://www.facebook.com/ecogloves.org/?ref=bookmarks"><img src="img/fb.png"></a></li>
+              <li><a href="#"><img src="img/in.png"></a></li>
+              <li><a href="#"><img src="img/vk.png"></a></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLa1BfettIKBb-8X8TK9OyLofUvyyr28Ht"><img src="img/you.png"></a></li>
+            </ul>',
     'fuck' => 'Ошибка отправки, позвоните нам пожалуйста',
     'spam' => 'Cпам робот',
     'notify' => 'color-modal',

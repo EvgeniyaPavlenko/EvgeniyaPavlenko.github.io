@@ -1,7 +1,8 @@
 function windowSize(){
+
     if ($(window).width() > '800'){
-    	$('.original .anim1,.antifrozen .anim1,.b2b .anim1,.buy .anim1').removeClass('fadeInDown');
-    	$('.original .anim1,.antifrozen .anim1,.b2b .anim1,.buy .anim1').addClass('fadeOutDown');
+    	$('.original .anim1,.antifrozen .anim1,.touch .anim1,.b2b .anim1,.buy .anim1').removeClass('fadeInDown');
+    	$('.original .anim1,.antifrozen .anim1,.touch .anim1,.b2b .anim1,.buy .anim1').addClass('fadeOutDown');
         $(".main").onepage_scroll({
 	       	sectionContainer: "section", // контейнер, к которому будет применяться скролл
 	       	easing: "ease", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
@@ -29,7 +30,23 @@ function windowSize(){
 		            $('.buy .anim1').removeClass('fadeOutDown');
 		            $('.buy .anim1').addClass('fadeInDown');
 		       	} 
+                if($('.b2b').hasClass('active')||$('.buy').hasClass('active')){
+                    $('.onepage-pagination').removeClass('bright');
+                    $('.onepage-pagination').addClass('dark');
+                }
+                else{
+                   $('.onepage-pagination').removeClass('dark');
+                    $('.onepage-pagination').addClass('bright');
+                }
 	        },
+            beforeMove: function (index) {
+                if ($('.b2b').hasClass('active')) {
+                    $('.share').addClass("share-on");
+                }
+                else{
+                    $('.share').removeClass("share-on");
+                }
+            },
 	       	loop: false,
 	   		responsiveFallback: false // обновлять URL или нет
     	});
@@ -91,8 +108,50 @@ function windowSize(){
         runItt(); 
 
     }
+    $('.onepage-pagination').addClass('bright');
 }
         function runItt() { 
             $( ".down" ).animate({bottom: 100}, 800 );
  			$( ".down" ).animate({bottom: 10}, 800,runItt );
         } 
+
+        $('.nonscroll').click(function(){
+            $(this).hide();
+        });
+
+
+ymaps.ready(init);
+function init () {
+    var myMap = new ymaps.Map("map", {
+            center: [56.844431, 60.629635],
+            zoom: 16
+        }),
+    myGeoObject = new ymaps.GeoObject();
+    myMap.geoObjects
+        .add(myGeoObject)
+        .add(new ymaps.Placemark([56.844284, 60.626095], {
+            balloonContent: 'Бажова, 75А'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/ballon.png',
+            // Размеры метки.
+            iconImageSize: [65, 60],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [0, 0]
+        }));
+};
+
+$('.size').click(function(){
+    $(this).parent().next('input[name="size-field"]').val($(this).attr('data-full'));
+});
+$('.gl_color').click(function(){
+    $(this).parent().next('input[name="color-field"]').val($(this).attr('data-full'));
+});
+
+$('.down').click(function(){
+      $(".main").moveDown();
+});

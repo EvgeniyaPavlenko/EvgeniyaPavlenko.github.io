@@ -157,7 +157,7 @@
             </ul>
         </div>
     </section>
-    <section class="b2b"  data-full="Контакты">
+    <section class="b2b"  data-full="Проедложение о сотрудничестве">
         <div class="b2b-content anim1 fadeInDown animated wow">
             <h2>Предложение b2b компаниям</h2>
             <h3>товар bestseller этого сезона</h3>
@@ -192,13 +192,14 @@
         </div>
         <img src="img/b2b-img.png" class="b2b-img">
     </section>
-    <section class="buy"  data-full="Где купить?">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=kbhy_kSnH3r-3rA-nP6A3JyWDZFJH8eO&amp;width=100%&amp;height=100vh&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+    <section class="buy"  data-full="Контакты">
+        <div id="map" style="height: 100vh;"></div>
+        <div class="nonscroll"></div>
         <div class="contacts anim1 fadeInDown animated wow">
             <h2>Адрес производителя</h2>
             <p>Адрес: Украина, 04108, г. Киев,<br> проспект Правды, 62 офис 77<br> ООО "Контакт Хэнди"</p>
             <h2>Контактный телефон</h2>
-            <p>+38 068 967 49 48<br> office@ecogloves.org</p>
+            <p><a href="#">+38 068 967 49 48</a><br> <a href="#">office@ecogloves.org</a></p>
             <ul>
             	<li><a href="https://www.facebook.com/ecogloves.org/?ref=bookmarks"><img src="img/fb.png"></a></li>
             	<li><a href="#"><img src="img/in.png"></a></li>
@@ -267,8 +268,35 @@
                     <img src="img/original-buy.png" class="original-buy">
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <img src="img/color-buy.png" class="color-buy">
                     <form name="original">
+                        <ul>
+                            <li><label>Выберите <br>размер:</label></li>
+                            <li class="size" data-full="маленький">
+                                <img src="img/small.png">
+                                <label for="radio">маленький</label>
+                            </li>
+                            <li class="size" data-full="средний">
+                                <img src="img/middle.png">
+                                <label for="radio">средний</label>
+                            </li>
+                            <li class="size" data-full="большой">
+                                <img src="img/large.png">
+                                <label for="radio">большой</label>
+                            </li>
+                        </ul>
+                        <input type="hidden" name="size-field" value="не выбрано"></input>
+                        <ul>
+                            <li><label>Выберите <br>цвет:</label></li>
+                            <li class="gl_color" data-full="серый">
+                                <img src="img/gray.png">
+                                <label for="radio">серый</label>
+                            </li>
+                            <li class="gl_color" data-full="черный">
+                                <img src="img/black.png">
+                                <label for="radio">черный</label>
+                            </li>
+                        </ul>
+                        <input type="hidden" name="color-field" value="не выбрано"></input>
                         <input type="text" placeholder="Ваше имя" name="name"></input><br>
                         <input type="text" placeholder="Ваш телефон" name="phone"></input><br>
                         <div class="button"><button class="feedback">купить сейчас</button></div>
@@ -340,8 +368,35 @@
                     <img src="img/touch-buy.png" class="original-buy">
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <img src="img/color-buy.png" class="color-buy">
                     <form name="touch">
+                        <ul>
+                            <li><label>Выберите <br>размер:</label></li>
+                            <li class="size" data-full="маленький">
+                                <img src="img/small.png">
+                                <label for="radio">маленький</label>
+                            </li>
+                            <li class="size" data-full="средний">
+                                <img src="img/middle.png">
+                                <label for="radio">средний</label>
+                            </li>
+                            <li class="size" data-full="большой">
+                                <img src="img/large.png">
+                                <label for="radio">большой</label>
+                            </li>
+                        </ul>
+                        <input type="hidden" name="size-field" value="не выбрано"></input>
+                        <ul>
+                            <li><label>Выберите <br>цвет:</label></li>
+                            <li class="gl_color" data-full="серый">
+                                <img src="img/gray.png">
+                                <label for="radio">серый</label>
+                            </li>
+                            <li class="gl_color" data-full="черный">
+                                <img src="img/black.png">
+                                <label for="radio">черный</label>
+                            </li>
+                        </ul>
+                        <input type="hidden" name="color-field" value="не выбрано"></input>
                         <input type="text" placeholder="Ваше имя" name="name"></input><br>
                         <input type="text" placeholder="Ваш телефон" name="phone"></input><br>
                         <div class="button"><button class="feedback">купить сейчас</button></div>
@@ -414,8 +469,35 @@
                     <img src="img/antifrozen-buy.png" class="original-buy">
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <img src="img/color-buy.png" class="color-buy">
                     <form name="antifrozen">
+                        <ul>
+                            <li><label>Выберите <br>размер:</label></li>
+                            <li class="size" data-full="маленький">
+                                <img src="img/small.png">
+                                <label for="radio">маленький</label>
+                            </li>
+                            <li class="size" data-full="средний">
+                                <img src="img/middle.png">
+                                <label for="radio">средний</label>
+                            </li>
+                            <li class="size" data-full="большой">
+                                <img src="img/large.png">
+                                <label for="radio">большой</label>
+                            </li>
+                        </ul>
+                        <input type="hidden" name="size-field" value="не выбрано"></input>
+                        <ul>
+                            <li><label>Выберите <br>цвет:</label></li>
+                            <li class="gl_color" data-full="серый">
+                                <img src="img/gray.png">
+                                <label for="radio">серый</label>
+                            </li>
+                            <li class="gl_color" data-full="черный">
+                                <img src="img/black.png">
+                                <label for="radio">черный</label>
+                            </li>
+                        </ul>
+                        <input type="hidden" name="color-field" value="не выбрано"></input>
                         <input type="text" placeholder="Ваше имя" name="name"></input><br>
                         <input type="text" placeholder="Ваш телефон" name="phone"></input><br>
                         <div class="button"><button class="feedback">купить сейчас</button></div>
@@ -441,7 +523,9 @@
 <script type="text/javascript" src="feedback/js/feedback.js"></script>
 <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script type="text/javascript" src="js/common.js"></script>
+
 
 
 <script>
@@ -507,6 +591,7 @@
 
 <script type="text/javascript">
     $(window).load(windowSize);
+
 </script>
 
         <script type="text/javascript">(function() {

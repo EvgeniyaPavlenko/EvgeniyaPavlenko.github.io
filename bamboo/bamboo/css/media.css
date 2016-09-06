@@ -92,7 +92,7 @@ img.down{position: absolute;margin: 0 auto;left: 0;right: 0;}
     .thumb1, .thumb2, .thumb3{
     	height: 100px;
     }
-    #ymaps1473066028696569614{
+    #map{
     	height: 30em !important;
     }
 }
@@ -133,7 +133,9 @@ img.down{position: absolute;margin: 0 auto;left: 0;right: 0;}
 	.pagin {
     right: -1%;
 }
-	
+	.b2b-content p {
+    font-size: 15px;
+}
 }
 @media only screen and (max-width : 360px) {
 
