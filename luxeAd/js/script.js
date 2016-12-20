@@ -5,20 +5,15 @@ $(window).load(function() {
 });
 
 $(document).ready(function(){
+	//heder height = window height+reaction on risizing
+		function height_detect(){
+			$(".top_banner").css("height", $(window).height());
+		};
+		height_detect();
 
-	var mixer = mixitup('.portfolio_container');
-
-	//PORTFOLIO active classes
-	$(".portfolio_nav li").click(function(){
-		$(".portfolio_nav li").removeClass("active");
-		$(this).addClass("active");
-	});
-
-
-	$('.carousel').carousel();
-
-
-
+		$(window).resize(function(){
+			height_detect();
+		});
 
 //sandwich menu
 
@@ -42,4 +37,8 @@ $(document).ready(function(){
 			$(".top_menu li a").addClass("fadeInUp animated");
 		}
 	});
+
+	$('.carousel').carousel();
+
 });
+

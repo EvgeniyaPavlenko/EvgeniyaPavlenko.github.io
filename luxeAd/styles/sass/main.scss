@@ -551,3 +551,34 @@ header{
 	    z-index: 10;
 	}
 }
+
+.work_1{
+	.top_banner{
+		width: 100%;
+		background-color: transparent;
+	}
+	.work_1_items{
+		.container{
+			text-align:center;
+			h3{
+				font-size: 30px;
+				font-family: "MyriadProRegular";	
+    			padding: 20px;
+    			color:#5DC7CE;
+			}
+		}
+		li{
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.work_1_description{
+		h4{
+			color:#062033;
+			font-size: 22px;
+			font-family: "MyriadProRegular";	
+    		padding: 20px;
+		}
+	}
+}

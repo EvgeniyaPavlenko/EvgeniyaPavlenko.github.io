@@ -591,3 +591,31 @@ header nav ul li:hover {
   top: 0;
   z-index: 10;
 }
+
+/* line 556, ../sass/main.scss */
+.work_1 .top_banner {
+  width: 100%;
+  background-color: transparent;
+}
+/* line 561, ../sass/main.scss */
+.work_1 .work_1_items .container {
+  text-align: center;
+}
+/* line 563, ../sass/main.scss */
+.work_1 .work_1_items .container h3 {
+  font-size: 30px;
+  font-family: "MyriadProRegular";
+  padding: 20px;
+  color: #5DC7CE;
+}
+/* line 571, ../sass/main.scss */
+.work_1 .work_1_items li img {
+  width: 100%;
+}
+/* line 577, ../sass/main.scss */
+.work_1 .work_1_description h4 {
+  color: #062033;
+  font-size: 22px;
+  font-family: "MyriadProRegular";
+  padding: 20px;
+}
