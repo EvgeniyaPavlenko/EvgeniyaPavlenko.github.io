@@ -62,6 +62,8 @@ header{
 	background-repeat: no-repeat;
 	background-position: 0 74px;
 	.logo_section{
+		position: absolute;
+		top:1px;
 		img{
 			padding-top: 10px;
 		}
@@ -72,7 +74,7 @@ header{
 		font-size: 45px;
 		line-height: 58px;
 		text-align: center;
-		padding:200px 0 159px 0;
+		padding:100px 0 159px 0;
 	}
 }
 /*HEADER_END*/
@@ -100,6 +102,11 @@ header{
 					background-color:#F68C2F;
 					border-radius:50%;
 					margin: 0 auto;
+					color:#fff;
+					i{
+						font-size: 40px;
+						padding-top: 28px;
+					}
 				}
 				&:nth-of-type(2){
 					.point{
@@ -292,8 +299,6 @@ header{
 	/*FOOTER*/
 	footer{
 		background: #2B0F26 url(../../img/footer.png) no-repeat;
-		padding-top: 380px;
-		padding-bottom: 177px;
 		.container{
 			color:#fff;
 			font-family: "SansationRegular";

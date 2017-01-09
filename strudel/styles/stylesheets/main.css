@@ -62,27 +62,32 @@ header {
   background-repeat: no-repeat;
   background-position: 0 74px;
 }
-/* line 65, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
+header .logo_section {
+  position: absolute;
+  top: 1px;
+}
+/* line 67, ../sass/main.scss */
 header .logo_section img {
   padding-top: 10px;
 }
-/* line 69, ../sass/main.scss */
+/* line 71, ../sass/main.scss */
 header h1 {
   font-family: "SansationBold";
   color: #fff;
   font-size: 45px;
   line-height: 58px;
   text-align: center;
-  padding: 200px 0 159px 0;
+  padding: 100px 0 159px 0;
 }
 
 /*HEADER_END*/
 /*ADVANTAGES*/
-/* line 81, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 .advantages {
   padding-top: 150px;
 }
-/* line 84, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 .advantages .container .advantages_items {
   text-align: center;
   font-family: "SansationRegular";
@@ -90,36 +95,42 @@ header h1 {
   font-size: 24px;
   line-height: 30px;
 }
-/* line 90, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .advantages .container .advantages_items p {
   font-size: 18px;
 }
-/* line 93, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 .advantages .container .advantages_items h3 {
   padding-bottom: 30px;
   padding-top: 30px;
 }
-/* line 97, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 .advantages .container .advantages_items .point {
   width: 105px;
   height: 105px;
   background-color: #F68C2F;
   border-radius: 50%;
   margin: 0 auto;
+  color: #fff;
 }
-/* line 105, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
+.advantages .container .advantages_items .point i {
+  font-size: 40px;
+  padding-top: 28px;
+}
+/* line 112, ../sass/main.scss */
 .advantages .container .advantages_items:nth-of-type(2) .point {
   background-color: #266C66;
 }
-/* line 110, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .advantages .container .advantages_items:nth-of-type(3) .point {
   background-color: #DB3928;
 }
-/* line 115, ../sass/main.scss */
+/* line 122, ../sass/main.scss */
 .advantages .container .row {
   padding: 90px;
 }
-/* line 117, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 .advantages .container .row p {
   text-align: center;
   font-size: 24px;
@@ -127,7 +138,7 @@ header h1 {
   color: #2F3542;
   position: relative;
 }
-/* line 123, ../sass/main.scss */
+/* line 130, ../sass/main.scss */
 .advantages .container .row p:after {
   content: "";
   width: 150px;
@@ -139,7 +150,7 @@ header h1 {
 
 /*ADVANTAGES_END*/
 /*SERVICES*/
-/* line 141, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 .services .container .left-section h2 {
   font-family: "SansationBold";
   font-size: 26px;
@@ -148,18 +159,18 @@ header h1 {
   line-height: 30px;
   padding-bottom: 50px;
 }
-/* line 149, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 .services .container .left-section ul {
   margin-left: 25px;
 }
-/* line 151, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 .services .container .left-section ul li {
   font-family: "SansationRegular";
   font-size: 16px;
   list-style-type: disc;
   line-height: 30px;
 }
-/* line 158, ../sass/main.scss */
+/* line 165, ../sass/main.scss */
 .services .container .left-section p {
   color: #2F3542;
   text-decoration: underline;
@@ -169,7 +180,7 @@ header h1 {
   margin-bottom: 50px;
   margin-top: 50px;
 }
-/* line 168, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .services .container .right-section {
   height: 600px;
   background: url(../../img/back_3.jpg) no-repeat 50%;
@@ -178,7 +189,7 @@ header h1 {
 
 /*SERVICES_END*/
 /*MISSION*/
-/* line 179, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 .mission {
   padding-bottom: 250px;
   color: #fff;
@@ -188,28 +199,28 @@ header h1 {
   background-size: cover;
   padding-top: 70px;
 }
-/* line 187, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 .mission .container {
   	/*background: url(../../img/back_4.jpg) no-repeat 50%;
       background-size: cover;
       padding-top: 131px;
       padding-bottom: 143px;*/
 }
-/* line 192, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 .mission .container p {
   font-size: 20px;
   line-height: 35px;
   padding-top: 41px;
 }
-/* line 197, ../sass/main.scss */
+/* line 204, ../sass/main.scss */
 .mission .container .left_column {
   text-align: left;
 }
-/* line 200, ../sass/main.scss */
+/* line 207, ../sass/main.scss */
 .mission .container .right_column {
   text-align: right;
 }
-/* line 203, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 .mission .container .middle_column {
   text-align: center;
   padding-top: 85px;
@@ -217,18 +228,18 @@ header h1 {
 
 /*MISSION_end*/
 /*TEAM*/
-/* line 212, ../sass/main.scss */
+/* line 219, ../sass/main.scss */
 .team {
   background: url(../../img/back_5.jpg) no-repeat;
   background-size: cover;
   padding-top: 50px;
   margin-top: 20px;
 }
-/* line 217, ../sass/main.scss */
+/* line 224, ../sass/main.scss */
 .team .container {
   padding-bottom: 180px;
 }
-/* line 219, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 .team .container h2 {
   font-family: "SansationBold";
   font-size: 24px;
@@ -237,22 +248,22 @@ header h1 {
   text-transform: uppercase;
   padding-bottom: 125px;
 }
-/* line 227, ../sass/main.scss */
+/* line 234, ../sass/main.scss */
 .team .container .team_item {
   text-align: center;
 }
-/* line 229, ../sass/main.scss */
+/* line 236, ../sass/main.scss */
 .team .container .team_item h4 {
   font-family: "SansationBold";
   font-size: 22px;
 }
-/* line 233, ../sass/main.scss */
+/* line 240, ../sass/main.scss */
 .team .container .team_item p {
   font-family: "SansationRegular";
   line-height: 35px;
   font-size: 20px;
 }
-/* line 238, ../sass/main.scss */
+/* line 245, ../sass/main.scss */
 .team .container .team_item img {
   width: 100%;
   margin-bottom: 30px;
@@ -260,12 +271,12 @@ header h1 {
 
 /*TEAM END*/
 /*LASKOM*/
-/* line 248, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 .laskom {
   margin-top: 20px;
   padding-bottom: 100px;
 }
-/* line 251, ../sass/main.scss */
+/* line 258, ../sass/main.scss */
 .laskom .top_div {
   color: #fff;
   font-family: "SansationBold";
@@ -273,18 +284,18 @@ header h1 {
   padding-top: 45px;
   padding-bottom: 50px;
 }
-/* line 257, ../sass/main.scss */
+/* line 264, ../sass/main.scss */
 .laskom .top_div .top_div_content {
   width: 60%;
   margin-left: 35%;
 }
-/* line 260, ../sass/main.scss */
+/* line 267, ../sass/main.scss */
 .laskom .top_div .top_div_content h3 {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 35px;
 }
-/* line 265, ../sass/main.scss */
+/* line 272, ../sass/main.scss */
 .laskom .top_div .top_div_content p {
   font-size: 14px;
   font-family: "SansationRegular";
@@ -292,20 +303,20 @@ header h1 {
   margin-top: 30px;
   margin-bottom: 50px;
 }
-/* line 272, ../sass/main.scss */
+/* line 279, ../sass/main.scss */
 .laskom .top_div .top_div_content a {
   font-size: 22px;
   font-family: "SansationBold";
   text-decoration: underline;
   float: right;
 }
-/* line 280, ../sass/main.scss */
+/* line 287, ../sass/main.scss */
 .laskom .bottom_div {
   font-size: 16px;
   font-family: "SansationRegular";
   line-height: 20px;
 }
-/* line 285, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
 .laskom .img_div {
   text-align: center;
   margin-top: 20px;
@@ -313,25 +324,23 @@ header h1 {
 
 /*LASKOM_END*/
 /*FOOTER*/
-/* line 293, ../sass/main.scss */
+/* line 300, ../sass/main.scss */
 footer {
   background: #2B0F26 url(../../img/footer.png) no-repeat;
-  padding-top: 380px;
-  padding-bottom: 177px;
 }
-/* line 297, ../sass/main.scss */
+/* line 302, ../sass/main.scss */
 footer .container {
   color: #fff;
   font-family: "SansationRegular";
 }
-/* line 300, ../sass/main.scss */
+/* line 305, ../sass/main.scss */
 footer .container h3 {
   font-size: 24px;
   font-family: "SansationBold";
   padding-bottom: 35px;
   text-transform: uppercase;
 }
-/* line 306, ../sass/main.scss */
+/* line 311, ../sass/main.scss */
 footer .container p {
   font-size: 16px;
   line-height: 25px;
