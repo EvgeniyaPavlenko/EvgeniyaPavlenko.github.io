@@ -12,6 +12,45 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.logo_container{
+		display: none;
+	}
+
+	.top_question {
+	    right: 0;
+	    top: 56px;
+	}
+
+	.top_order{
+		right: 0;
+	}
+
+	.ul_style .ul_presentations{
+		padding-left: 0;
+	}
+
+	.ul_style .ul_trainings{
+		padding-left: 0;
+	}
+
+	ul{
+		padding: 0;
+	}
+
+	#price .col-md-3{
+		margin-left: 0;
+	}
+
+	#trainings_format ul li:before {
+	    position: static;
+	    display: block;
+	    margin: 0 auto;
+	    margin-bottom: 10px;
+	}
+
+	#trainings_format ul{
+		text-align: center;
+	}
 
 }
 
@@ -22,6 +61,7 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+
 }
 
 /* Custom, iPhone Retina */
