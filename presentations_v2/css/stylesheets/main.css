@@ -29,7 +29,7 @@ section h3 {
 a,
 a:visited,
 a:hover {
-  color: inherit;
+  color: #fff;
   font-size: inherit;
   font-family: inherit;
 }
@@ -349,44 +349,45 @@ button a {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-color: #000;
+  background-color: #fff;
   vertical-align: middle;
   margin-right: 20px;
   background-position: 50% 50%;
   background-size: cover;
+  border: 1px solid #000;
 }
 
-/* line 262, ../sass/main.sass */
+/* line 263, ../sass/main.sass */
 #services .ul_presentations li:first-child:before {
-  background-image: url("../../img/icon-partner.png");
+  background-image: url("../../img/icon_partner.png");
 }
 
-/* line 265, ../sass/main.sass */
+/* line 266, ../sass/main.sass */
 #services .ul_presentations li:nth-child(2):before {
-  background-image: url("../../img/icon-busibess.png");
+  background-image: url("../../img/icon-business.png");
 }
 
-/* line 268, ../sass/main.sass */
+/* line 269, ../sass/main.sass */
 #services .ul_presentations li:nth-child(3):before {
   background-image: url("../../img/icon-education.png");
 }
 
-/* line 271, ../sass/main.sass */
+/* line 272, ../sass/main.sass */
 #services .ul_trainings li:nth-child(1):before {
-  background-image: url("../../img/icon-training_1.png");
+  background-image: url("../../img/icon-cons.png");
 }
 
-/* line 274, ../sass/main.sass */
+/* line 275, ../sass/main.sass */
 #services .ul_trainings li:nth-child(2):before {
   background-image: url("../../img/icon-training.png");
 }
 
-/* line 277, ../sass/main.sass */
+/* line 278, ../sass/main.sass */
 #mechanic .ul_style li {
   padding-left: 55px;
 }
 
-/* line 280, ../sass/main.sass */
+/* line 281, ../sass/main.sass */
 #mechanic .ul_style li:before {
   content: "1";
   position: absolute;
@@ -399,37 +400,37 @@ button a {
   background-color: #fff;
 }
 
-/* line 291, ../sass/main.sass */
+/* line 292, ../sass/main.sass */
 #mechanic .ul_style li:nth-child(2):before {
   content: "2";
 }
 
-/* line 294, ../sass/main.sass */
+/* line 295, ../sass/main.sass */
 #mechanic .ul_style li:nth-child(3):before {
   content: "3";
 }
 
-/* line 297, ../sass/main.sass */
+/* line 298, ../sass/main.sass */
 #mechanic .container {
   background-color: #fff;
   padding: 50px 0;
 }
 
-/* line 301, ../sass/main.sass */
+/* line 302, ../sass/main.sass */
 #mechanic p {
   color: #000;
   font-size: 20px;
 }
-/* line 304, ../sass/main.sass */
+/* line 305, ../sass/main.sass */
 #mechanic p span {
   font-weight: bold;
 }
 
-/* line 307, ../sass/main.sass */
+/* line 308, ../sass/main.sass */
 #trainings .col-md-3 {
   text-align: center;
 }
-/* line 309, ../sass/main.sass */
+/* line 310, ../sass/main.sass */
 #trainings .col-md-3 img {
   display: block;
   margin: 10px auto;
@@ -438,18 +439,18 @@ button a {
   padding: 5px;
 }
 
-/* line 316, ../sass/main.sass */
+/* line 317, ../sass/main.sass */
 #contacts {
   color: #fff;
 }
 
-/* line 321, ../sass/main.sass */
+/* line 322, ../sass/main.sass */
 #trainings_format ul li {
   margin-top: 23px;
   list-style-type: none;
   position: relative;
 }
-/* line 325, ../sass/main.sass */
+/* line 326, ../sass/main.sass */
 #trainings_format ul li:before {
   content: "1";
   position: absolute;
@@ -461,33 +462,33 @@ button a {
   left: -45px;
   top: 0;
 }
-/* line 335, ../sass/main.sass */
+/* line 336, ../sass/main.sass */
 #trainings_format ul li:nth-child(2):before {
   content: "2";
 }
-/* line 337, ../sass/main.sass */
+/* line 338, ../sass/main.sass */
 #trainings_format ul li:nth-child(3):before {
   content: "3";
 }
-/* line 339, ../sass/main.sass */
+/* line 340, ../sass/main.sass */
 #trainings_format ul li:nth-child(4):before {
   content: "4";
 }
-/* line 341, ../sass/main.sass */
+/* line 342, ../sass/main.sass */
 #trainings_format ul li span {
   display: block;
 }
 
-/* line 346, ../sass/main.sass */
+/* line 347, ../sass/main.sass */
 #price h2 {
   color: #fff;
 }
-/* line 348, ../sass/main.sass */
+/* line 349, ../sass/main.sass */
 #price .section_content {
   background-color: #FAFAFA;
   padding: 50px 0;
 }
-/* line 351, ../sass/main.sass */
+/* line 352, ../sass/main.sass */
 #price .col-md-3 {
   text-align: center;
   background-color: #fff;
@@ -496,11 +497,11 @@ button a {
   margin-left: 8%;
   padding: 0;
 }
-/* line 358, ../sass/main.sass */
+/* line 359, ../sass/main.sass */
 #price .col-md-3 p {
   padding-top: 0;
 }
-/* line 360, ../sass/main.sass */
+/* line 361, ../sass/main.sass */
 #price .col-md-3 button {
   width: 100%;
   color: #fff;
@@ -510,50 +511,50 @@ button a {
   text-transform: uppercase;
   height: 40px;
 }
-/* line 368, ../sass/main.sass */
+/* line 369, ../sass/main.sass */
 #price p {
   padding-top: 30px;
 }
 
-/* line 372, ../sass/main.sass */
+/* line 373, ../sass/main.sass */
 #experiance .col-md-4 {
   text-align: center;
 }
-/* line 374, ../sass/main.sass */
+/* line 375, ../sass/main.sass */
 #experiance .col-md-4 ul {
   text-align: left;
 }
-/* line 376, ../sass/main.sass */
+/* line 377, ../sass/main.sass */
 #experiance .logo_container {
   margin: 30px 0;
   padding: 15px 0;
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
 }
-/* line 381, ../sass/main.sass */
+/* line 382, ../sass/main.sass */
 #experiance .logo_container img {
   width: 60%;
 }
-/* line 383, ../sass/main.sass */
+/* line 384, ../sass/main.sass */
 #experiance .logo_container .freud {
   padding-top: 10px;
 }
 
-/* line 387, ../sass/main.sass */
+/* line 388, ../sass/main.sass */
 #contacts .col-md-4 {
   text-align: center;
 }
-/* line 389, ../sass/main.sass */
+/* line 390, ../sass/main.sass */
 #contacts ul {
   padding: 0;
 }
-/* line 391, ../sass/main.sass */
+/* line 392, ../sass/main.sass */
 #contacts ul li {
   list-style-type: none;
   position: relative;
   margin: 50px 0;
 }
-/* line 395, ../sass/main.sass */
+/* line 396, ../sass/main.sass */
 #contacts ul li:before {
   content: "";
   width: 30px;
@@ -565,15 +566,15 @@ button a {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-/* line 405, ../sass/main.sass */
+/* line 406, ../sass/main.sass */
 #contacts ul li:nth-child(2):before {
   background-image: url("../../img/gmail_logo.png");
 }
-/* line 407, ../sass/main.sass */
+/* line 408, ../sass/main.sass */
 #contacts ul li:nth-child(3):before {
   background-image: url("../../img/call.png");
 }
-/* line 409, ../sass/main.sass */
+/* line 410, ../sass/main.sass */
 #contacts button {
   width: 165px;
   height: 35px;
@@ -584,4 +585,8 @@ button a {
   outline: none;
   background-color: #fff;
   margin-bottom: 40px;
+}
+/* line 420, ../sass/main.sass */
+#contacts button a {
+  color: #000;
 }
