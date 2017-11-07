@@ -329,6 +329,11 @@ button a {
   text-transform: uppercase;
 }
 
+.top_order a,
+.top_question a{
+  color: #fff !important;
+}
+
 /* line 241, ../sass/main.sass */
 .top_question {
   right: 190px;
@@ -516,6 +521,10 @@ button a {
   padding-top: 30px;
 }
 
+#price button a{
+  color: #fff !important;
+}
+
 /* line 373, ../sass/main.sass */
 #experiance .col-md-4 {
   text-align: center;
@@ -590,3 +599,9 @@ button a {
 #contacts button a {
   color: #000;
 }
+
+#contacts li a{
+  color: #fff !important;
+}
+
+
